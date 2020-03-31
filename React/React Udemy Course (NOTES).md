@@ -13,12 +13,12 @@ Q) Why we use className keyword instead of class in JSX?, and does class keyword
 A) Yes, class works. But we shouldn't use 'class'. The reason is that it will be confused with 'class' keyword used for creating components. Example, class App extends React.Component   
 
 * Component LifeCycle (Time starts from 1 -> 5):-   
-1. constructor   
-2. render   
+1. constructor	// One-time setup(Ex- State Initialization)   
+2. render	// Return JSX only, Recommended.   
 	content visible on screen   
-3. componentDidMount  
+3. componentDidMount	// Data-Loading here(Ex- API Calls), Recommended.   
 	sit and wait for updates  
 4. [render] x n   
-5. componentDidUpdate x n   
+5. componentDidUpdate x n	// More Data-Loading here whenever state/props changes.   
 	sit and wait until this component is unmounted   
-6. componentWillUnmount   
+6. componentWillUnmount	// Cleanup   

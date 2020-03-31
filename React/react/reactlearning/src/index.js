@@ -109,7 +109,6 @@ class App extends React.Component {
     this.state = {
       lat: 0
     };
-    this.getLatitude();
   }
 
   getLatitude() {
@@ -123,6 +122,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    this.getLatitude();
     console.log("componentDidMount called");
   }
 
@@ -131,7 +131,12 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>{console.log("render called")}</div>;
+    return (
+      <div>
+        {console.log("render called")}
+        Latitude: {this.state.lat}
+      </div>
+    );
   }
 }
 
