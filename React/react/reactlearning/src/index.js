@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Parent from './components/Parent';
-import Child from './components/Child';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+// import Parent from './components/Parent';
+// import Child from './components/Child';
+
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // const App = () => {
 
@@ -24,13 +26,13 @@ import Child from './components/Child';
 //             */}
 //             <label htmlFor="myname">Name</label>
 //             <input id="myname" />
-            
+
 //         </div>
-//     ); 
+//     );
 //     // First Curly braces indicates JS variable and Second Curly braces indicates object
 
 //     // class and className both are working.
-//     // If we use both together as className="divStyle" class="divStyle1", 
+//     // If we use both together as className="divStyle" class="divStyle1",
 //     // class's styling is overwriting className's styling here as it comes later.
 //     // But we shouldn't use 'class'. The reason is that it will be confused with 'class' keyword used for creating components.
 //     // Example, class App extends React.Component
@@ -52,16 +54,21 @@ import Child from './components/Child';
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-class App extends React.Component{
-    render() {
-        return <div>Hi</div>
-    }
-};
+class App extends React.Component {
+  render() {
+    window.navigator.geolocation.getCurrentPosition(
+      position => console.log(position),
+      err => console.log(err)
+    );
+
+    return <div>hi</div>;
+  }
+}
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 ReactDOM.render(
-    <App />,
-    // document.querySelector('#root')
-    document.getElementById('root')
-)
+  <App />,
+  // document.querySelector('#root')
+  document.getElementById("root")
+);
