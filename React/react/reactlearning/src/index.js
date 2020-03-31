@@ -54,53 +54,88 @@ import "./index.css";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
+// class App extends React.Component {
+//   // constructor method is called whenever new instance of App is created
+//   // and It is called at the very beginning.
+//   // Constructor method is not specific to React, it is feature of JS.
+//   // It is called with the 'props' variable which is same as props in functional component.
+//   constructor(props) {
+//     // This constructor is overriding the constructor of React.component
+//     // To run all the required functionality of parent's constructor, call super function.
+//     super(props);
+
+//     // variable name must be state instead of anything else like myState, etc.
+//     this.state = {
+//       lat: 0,
+//       demo: 450
+//     };
+
+//     window.navigator.geolocation.getCurrentPosition(
+//       // callback function when geolocation getCurrentPosition API succeed
+//       position => {
+//         console.log(position);
+//         this.setState({ lat: position.coords.latitude });
+//         // Don't use like this
+//         // this.state.lat = position.coords.latitude
+//       },
+//       // callback function when geolocation getCurrentPosition API fails
+//       err => console.log(err)
+//     );
+//   }
+
+//   // render method is compulsory in React
+//   render() {
+//     // Render method will be called frequently whenever state changes so don't write such api calls inside render method.
+//     // window.navigator.geolocation.getCurrentPosition(
+//     //   position => console.log(position),
+//     //   err => console.log(err)
+//     // );
+
+//     return (
+//       <div>
+//         Latitude: {this.state.lat} <br /> Demo: {this.state.demo}
+//       </div>
+//     );
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 class App extends React.Component {
-  // constructor method is called whenever new instance of App is created
-  // and It is called at the very beginning.
-  // Constructor method is not specific to React, it is feature of JS.
-  // It is called with the 'props' variable which is same as props in functional component.
   constructor(props) {
-    // This constructor is overriding the constructor of React.component
-    // To run all the required functionality of parent's constructor, call super function.
     super(props);
 
-    // variable name must be state instead of anything else like myState, etc.
+    console.log("constructor called");
     this.state = {
-      lat: 0,
-      demo: 450
+      lat: 0
     };
+    this.getLatitude();
+  }
 
+  getLatitude() {
     window.navigator.geolocation.getCurrentPosition(
-      // callback function when geolocation getCurrentPosition API succeed
       position => {
         console.log(position);
         this.setState({ lat: position.coords.latitude });
-        // Don't use like this
-        // this.state.lat = position.coords.latitude
       },
-      // callback function when geolocation getCurrentPosition API fails
       err => console.log(err)
     );
   }
 
-  // render method is compulsory in React
-  render() {
-    // Render method will be called frequently whenever state changes so don't write such api calls inside render method.
-    // window.navigator.geolocation.getCurrentPosition(
-    //   position => console.log(position),
-    //   err => console.log(err)
-    // );
+  componentDidMount() {
+    console.log("componentDidMount called");
+  }
 
-    return (
-      <div>
-        Latitude: {this.state.lat} <br /> Demo: {this.state.demo}
-      </div>
-    );
+  componentDidUpdate() {
+    console.log("componentDidUpdate called");
+  }
+
+  render() {
+    return <div>{console.log("render called")}</div>;
   }
 }
 
 // ------------------------------------------------------------------------------------------------------------------------------------
-
 ReactDOM.render(
   <App />,
   // document.querySelector('#root')
