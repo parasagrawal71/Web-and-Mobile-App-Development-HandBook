@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import Parent from './components/Parent';
 // import Child from './components/Child';
-import DefaultProps from "./components/DefaultProps";
+// import DefaultProps from "./components/DefaultProps";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -145,10 +145,49 @@ import DefaultProps from "./components/DefaultProps";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
+// class App extends React.Component {
+//   render() {
+//     return <DefaultProps />;
+//     // return <DefaultProps message="Hey value passed" />;
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 class App extends React.Component {
+  onInputChange(event) {
+    console.log("onInputChange called");
+
+    // console.log(event);
+    console.log(event.target.value);
+  }
+
   render() {
-    return <DefaultProps />;
-    // return <DefaultProps message="Hey value passed" />;
+    return (
+      <div>
+        {/* This passes the reference of the function, so whenever event occurs function will be called. */}
+        {/* In this case, *****event is passed automatically***** as one parameter */}
+        <input onChange={this.onInputChange} />
+
+        {/* Don't use parenthesis, it will be called immediately */}
+        {/* event = undefined */}
+        {/* <input onChange={this.onInputChange()} /> */}
+
+        {/* This also works */}
+        {/* In this case, event must be passed */}
+        {/* <input onChange={event => this.onInputChange(event)} /> */}
+
+        {/* This is wrong */}
+        {/* onInputChange Function is never being called */}
+        {/* <input onChange={() => this.onInputChange} /> */}
+
+        {/* onClick event is associated with every element such as div, input, etc.
+        Unlike onClick, onChange and onSubmit events are not associated with every elements. For Example, div. */}
+
+        {/* Event handler function's name convention:- on + element_name + event_name OR handle + element_name + event_name
+        Example, onInputChange or handleInputChange */}
+      </div>
+    );
   }
 }
 
