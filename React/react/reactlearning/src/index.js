@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import Parent from './components/Parent';
 // import Child from './components/Child';
+import DefaultProps from "./components/DefaultProps";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -101,46 +102,58 @@ import "./index.css";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
+// class App extends React.Component {
+//   // constructor(props) {
+//   //   super(props);
+
+//   //   console.log("constructor called");
+//   //   this.state = { lat: 0 };
+//   // }
+
+//   // Alternate State Initialization
+//   // Babel converts following line into constructor
+//   state = { lat: 0 };
+
+//   getLatitude() {
+//     window.navigator.geolocation.getCurrentPosition(
+//       position => {
+//         console.log(position);
+//         this.setState({ lat: position.coords.latitude });
+//       },
+//       err => console.log(err)
+//     );
+//   }
+
+//   componentDidMount() {
+//     this.getLatitude();
+//     console.log("componentDidMount called");
+//   }
+
+//   componentDidUpdate() {
+//     console.log("componentDidUpdate called");
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         {console.log("render called")}
+//         Latitude: {this.state.lat}
+//       </div>
+//     );
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    console.log("constructor called");
-    this.state = {
-      lat: 0
-    };
-  }
-
-  getLatitude() {
-    window.navigator.geolocation.getCurrentPosition(
-      position => {
-        console.log(position);
-        this.setState({ lat: position.coords.latitude });
-      },
-      err => console.log(err)
-    );
-  }
-
-  componentDidMount() {
-    this.getLatitude();
-    console.log("componentDidMount called");
-  }
-
-  componentDidUpdate() {
-    console.log("componentDidUpdate called");
-  }
-
   render() {
-    return (
-      <div>
-        {console.log("render called")}
-        Latitude: {this.state.lat}
-      </div>
-    );
+    return <DefaultProps />;
+    // return <DefaultProps message="Hey value passed" />;
   }
 }
 
 // ------------------------------------------------------------------------------------------------------------------------------------
+
 ReactDOM.render(
   <App />,
   // document.querySelector('#root')
