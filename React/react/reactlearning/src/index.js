@@ -4,6 +4,7 @@ import "./index.css";
 // import Parent from './components/Parent';
 // import Child from './components/Child';
 // import DefaultProps from "./components/DefaultProps";
+import ChildToParent from "./components/ChildToParent";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -154,40 +155,131 @@ import "./index.css";
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-class App extends React.Component {
-  onInputChange(event) {
-    console.log("onInputChange called");
+// class App extends React.Component {
+//   onInputChange(event) {
+//     // console.log("onInputChange called");
 
-    // console.log(event);
-    console.log(event.target.value);
-  }
+//     // console.log(event);
+//     console.log(event.target.value);
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         {/* This passes the reference of the function, so whenever event occurs function will be called. */}
+//         {/* In this case, *****event is passed automatically***** as one parameter */}
+//         <input onChange={this.onInputChange} />
+
+//         {/* Don't use parenthesis, it will be called immediately */}
+//         {/* event = undefined */}
+//         {/* <input onChange={this.onInputChange()} /> */}
+
+//         {/* This also works */}
+//         {/* In this case, event must be passed */}
+//         {/* <input onChange={event => this.onInputChange(event)} /> */}
+
+//         {/* This is wrong */}
+//         {/* onInputChange Function is never being called */}
+//         {/* <input onChange={() => this.onInputChange} /> */}
+
+//         {/* onClick event is associated with every element such as div, input, etc.
+//         Unlike onClick, onChange and onSubmit events are not associated with every elements. For Example, div. */}
+
+//         {/* Event handler function's name convention:- on + element_name + event_name OR handle + element_name + event_name
+//         Example, onInputChange or handleInputChange */}
+//       </div>
+//     );
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+// class App extends React.Component {
+//   // // UNCONTROLLED
+//   // // Q) What is the value of input?
+//   // // A) Get input's value from 'input' in the DOM
+
+//   // onInputChange(event) {
+//   //   console.log(event.target.value);
+//   // }
+
+//   // render() {
+//   //   return (
+//   //     <div>
+//   //       <input onChange={this.onInputChange} />
+//   //     </div>
+//   //   );
+//   // }
+
+//   // ---------------------------------------------------------------------
+//   // CONTROLLED
+//   // Q) What is the value of input?
+//   // A) Look at the state to get current value of the input
+//   state = { term: "" };
+
+//   render() {
+//     return (
+//       <div>
+//         {/* form refreshes the page after we press enter button. Without form, just the input doesn't refresh */}
+//         <form
+//           onSubmit={e => {
+//             e.preventDefault(); // Prevents the page from refreshing
+//           }}
+//         >
+//           <input
+//             // This 'value' prop makes it controlled
+//             value={this.state.term}
+//             onChange={e => {
+//               this.setState({ term: e.target.value });
+//             }}
+//           />
+//         </form>
+//         {this.state.term}
+//       </div>
+//     );
+//   }
+
+//   // // ---------------------------------------------------------------------
+//   // // this.setState Throws Error
+//   // state = { term: "" };
+
+//   // // onInputChange(event) { // onInputChange = function(event) {
+//   // //   console.log(event.target.value);
+//   // //   this.setState({ term: event.target.value }); // ERROR
+//   // //   // console.log(this.state.term); // ERROR
+//   // // };
+
+//   // /* Method 2: Following arrow function solves the Error: cannot read setState of undefined
+//   // Arrow function makes sure 'this' refers to the instance of App  */
+//   // onInputChange = event => {
+//   //   console.log(event.target.value);
+//   //   this.setState({ term: event.target.value }); // ERROR
+//   //   // console.log(this.state.term); // ERROR
+//   // };
+
+//   // // Method 3:  bind 'this' to the method 'onInputChange' of the class App.
+
+//   // render() {
+//   //   return (
+//   //     <div>
+//   //       <input onChange={this.onInputChange} />
+
+//   //       {/* Method 1: Following line solves the Error: cannot read setState of undefined */}
+//   //       {/* <input onChange={e => this.onInputChange(e)} /> */}
+
+//   //       {this.state.term}
+//   //     </div>
+//   //   );
+//   // }
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+class App extends React.Component {
+  propsCallback = () => {};
 
   render() {
-    return (
-      <div>
-        {/* This passes the reference of the function, so whenever event occurs function will be called. */}
-        {/* In this case, *****event is passed automatically***** as one parameter */}
-        <input onChange={this.onInputChange} />
-
-        {/* Don't use parenthesis, it will be called immediately */}
-        {/* event = undefined */}
-        {/* <input onChange={this.onInputChange()} /> */}
-
-        {/* This also works */}
-        {/* In this case, event must be passed */}
-        {/* <input onChange={event => this.onInputChange(event)} /> */}
-
-        {/* This is wrong */}
-        {/* onInputChange Function is never being called */}
-        {/* <input onChange={() => this.onInputChange} /> */}
-
-        {/* onClick event is associated with every element such as div, input, etc.
-        Unlike onClick, onChange and onSubmit events are not associated with every elements. For Example, div. */}
-
-        {/* Event handler function's name convention:- on + element_name + event_name OR handle + element_name + event_name
-        Example, onInputChange or handleInputChange */}
-      </div>
-    );
+    return <ChildToParent />;
   }
 }
 
