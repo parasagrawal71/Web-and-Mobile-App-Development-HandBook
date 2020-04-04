@@ -5,3 +5,7 @@
 .divStyle1 {
     color: blue;
 }
+
+.image-list{
+    display: grid;
+}
