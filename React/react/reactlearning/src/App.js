@@ -4,7 +4,7 @@ import "./App.css";
 // import Child from './components/Child';
 // import DefaultProps from "./components/DefaultProps";
 // import ChildToParent from "./components/ChildToParent";
-import SingleImage from './components/SingleImage';
+// import SingleImage from './components/SingleImage';
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -297,12 +297,12 @@ import SingleImage from './components/SingleImage';
 
 // class App extends React.Component {
 //     state = {termInParent: ""}
-  
+
 //     propsCallback = (arg) => {
 //       console.log(arg);
 //       this.setState({termInParent: arg})
 //     };
-  
+
 //     render() {
 //       return (
 //         <div>
@@ -312,30 +312,38 @@ import SingleImage from './components/SingleImage';
 //       );
 //     }
 //   }
-  
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+// class App extends React.Component {
+
+//     componentDidMount() {
+//         // console.log(document.querySelector('img'));
+//         // We use document.querySelector in vanilla JS.
+//         // Instead of document.querySelector, we prefer refs in react.
+//         // refs:- give access to a single DOM element.
+//     }
+
+//     render() {
+//       return ( // "display: grid" Styling
+//         <div className="image-list">
+//             <SingleImage src={require('./assets/img/1.jpg')} alt="1" />
+//             <SingleImage src={require('./assets/img/2.jpeg')} alt="2" />
+//             <SingleImage src={require('./assets/img/3.jfif')} alt="3" />
+//             <SingleImage src={require('./assets/img/4.jfif')} alt="4" />
+//         </div>
+//       );
+//     }
+//   }
+
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 class App extends React.Component {
-    
-    componentDidMount() {
-        // console.log(document.querySelector('img'));
-        // We use document.querySelector in vanilla JS.
-        // Instead of document.querySelector, we prefer refs in react.
-        // refs:- give access to a single DOM element.
-    }
-
-    render() {
-      return ( // "display: grid" Styling 
-        <div className="image-list">
-            <SingleImage src={require('./assets/img/1.jpg')} alt="1" />
-            <SingleImage src={require('./assets/img/2.jpeg')} alt="2" />
-            <SingleImage src={require('./assets/img/3.jfif')} alt="3" />
-            <SingleImage src={require('./assets/img/4.jfif')} alt="4" />
-        </div>
-      );
-    }
+  render() {
+    return <div>Next topic is Redux</div>;
   }
-  
+}
+
 // ------------------------------------------------------------------------------------------------------------------------------------
-  
+
 export default App;
