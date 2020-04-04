@@ -276,10 +276,20 @@ import ChildToParent from "./components/ChildToParent";
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 class App extends React.Component {
-  propsCallback = () => {};
+  state = {termInParent: ""}
+
+  propsCallback = (arg) => {
+    console.log(arg);
+    this.setState({termInParent: arg})
+  };
 
   render() {
-    return <ChildToParent />;
+    return (
+      <div>
+        <ChildToParent passDataToParent={this.propsCallback}/>
+        termInParent: {this.state.termInParent}
+      </div>
+    );
   }
 }
 
