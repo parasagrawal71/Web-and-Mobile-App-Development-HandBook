@@ -22,3 +22,12 @@ A) Yes, class works. But we shouldn't use 'class'. The reason is that it will be
 5. componentDidUpdate x n	// More Data-Loading here whenever state/props changes.   
 	sit and wait until this component is unmounted   
 6. componentWillUnmount	// Cleanup   
+
+* Redux Cycle:-   
+Action Creator --> Action --> dispatch --> Reducers --> State   
+(Function)	   (Object)   (Function)   (Function)   (Object)
+	- Action Creator is a function that is going to create or return a plain JS object.   
+	- This plain JS object returned by Action Creator is an action. An action has a type property and payload property. Type property describes some change that we want to make inside of our data and Payload property describes some contexts around the change that we want to make.   
+	- dispatch function is going to take in an action. It's going to make copies of that object and then pass it off to a bunch of different places inside of our application.   
+	- Reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action and then make some change to the data and then return it so that it can be centralized in some other other location.   
+	- State is a central repository of all information that has been created by our reducers.   
