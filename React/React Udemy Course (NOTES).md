@@ -31,3 +31,6 @@ Action Creator --> Action --> dispatch --> Reducers --> State
 	- dispatch function is going to take in an action. It's going to make copies of that object and then pass it off to a bunch of different places inside of our application.   
 	- Reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action and then make some change to the data and then return it so that it can be centralized in some other other location.   
 	- State is a central repository of all information that has been created by our reducers.   
+
+Redux codepen link:- https://codepen.io/parasagrawal71/pen/VwLJpaZ   
+(same code available in "redux in vanilla JS" folder).
