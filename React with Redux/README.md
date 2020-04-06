@@ -1,1 +1,1 @@
-This folder contains "Notes" for React.
+This folder contains "Notes" for React and Redux.
