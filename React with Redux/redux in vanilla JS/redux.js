@@ -75,6 +75,7 @@ const policies = (listOfPolicies = [], action) => {
 const { createStore, combineReducers } = Redux;
 
 const ourDepartments = combineReducers({
+  // moneyWeHave: claimsHistory, // Key name can be different
   claimsHistory: claimsHistory,
   accounting: accounting,
   policies: policies,
@@ -113,3 +114,9 @@ console.log(store.getState());
 console.log(store.getState().claimsHistory);
 console.log(store.getState().accounting);
 console.log(store.getState().policies);
+
+// We can change the state by only creating an action using action creators and feeding them to dispatch function.
+// Following is wrong:-
+// store.state.keyName = 20 (something like this)
+// console.log("printme",store.accouting) (Doesn't work)
+// console.log("printme",store.state.accouting) (Doesn't work)

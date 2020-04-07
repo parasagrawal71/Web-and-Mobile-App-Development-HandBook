@@ -33,4 +33,6 @@ Action Creator --> Action --> dispatch --> Reducers --> State
 	- State is a central repository of all information that has been created by our reducers.   
 
 Redux codepen link:- https://codepen.io/parasagrawal71/pen/VwLJpaZ   
-(same code available in "redux in vanilla JS" folder).
+(same code available in "redux in vanilla JS" folder).   
+
+To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> Gets fed to.. --> [dispatch] --> Forwards the action to each reducers.. --> [Reducers] --> Creates new.. --> [State] --> Wait until we need to update state again.   
