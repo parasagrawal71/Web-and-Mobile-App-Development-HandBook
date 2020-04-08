@@ -12,7 +12,7 @@ Babel converts the JSX into JS codes(React.createElement) which then converted i
 Q) Why we use className keyword instead of class in JSX?, and does class keyword works?   
 A) Yes, class works. But we shouldn't use 'class'. The reason is that it will be confused with 'class' keyword used for creating components. Example, class App extends React.Component   
 
-* Component LifeCycle (Time starts from 1 -> 5):-   
+* __Component LifeCycle__ (Time starts from 1 -> 5):-   
 1. constructor	// One-time setup(Ex- State Initialization)   
 2. render	// Return JSX only, Recommended.   
 	content visible on screen   
@@ -23,11 +23,11 @@ A) Yes, class works. But we shouldn't use 'class'. The reason is that it will be
 	sit and wait until this component is unmounted   
 6. componentWillUnmount	// Cleanup   
 
-* Redux Cycle:-   
+* __Redux Cycle__:-   
 Action Creator --> Action --> dispatch --> Reducers --> State   
 (Function) --> (Object) --> (Function) --> (Function) --> (Object)
 	- Action Creator is a function that is going to create or return a plain JS object.   
-	- This plain JS object returned by Action Creator is an action. An action has a type property and payload property. Type property describes some change that we want to make inside of our data and Payload property describes some contexts around the change that we want to make.   
+	- This plain JS object returned by Action Creator is an action. An action has a type property and payload property. Type property(required) describes some change that we want to make inside of our data and Payload property(optional) describes some contexts around the change that we want to make.   
 	- dispatch function is going to take in an action. It's going to make copies of that object and then pass it off to a bunch of different places inside of our application.   
 	- Reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action and then make some change to the data and then return it so that it can be centralized in some other other location.   
 	- State is a central repository of all information that has been created by our reducers.   
@@ -36,3 +36,11 @@ Redux codepen link:- https://codepen.io/parasagrawal71/pen/VwLJpaZ
 (same code available in "redux in vanilla JS" folder).   
 
 To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> Gets fed to.. --> [dispatch] --> Forwards the action to each reducers.. --> [Reducers] --> Creates new.. --> [State] --> Wait until we need to update state again.   
+
+* Redux was not designed to work with react. So, We are using React-Redux library which contains a bunch of helper functions inside of it to work redux with react.   
+  React  -->   React-Redux     --> Redux   
+	 <--  (Gets React and  <--   
+	       Redux to work   
+	       together)   
+
+* __How React-Redux works?__:-   
