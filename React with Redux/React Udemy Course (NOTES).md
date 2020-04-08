@@ -24,8 +24,10 @@ A) Yes, class works. But we shouldn't use 'class'. The reason is that it will be
 6. componentWillUnmount	// Cleanup   
 
 * __Redux Cycle__:-   
-Action Creator --> Action --> dispatch --> Reducers --> State   
-(Function) --> (Object) --> (Function) --> (Function) --> (Object)
+<pre>
+Action Creator -->  Action  -->  dispatch  -->  Reducers  -->  State   
+(Function)     --> (Object) --> (Function) --> (Function) --> (Object)
+</pre>
 	- Action Creator is a function that is going to create or return a plain JS object.   
 	- This plain JS object returned by Action Creator is an action. An action has a type property and payload property. Type property(required) describes some change that we want to make inside of our data and Payload property(optional) describes some contexts around the change that we want to make.   
 	- dispatch function is going to take in an action. It's going to make copies of that object and then pass it off to a bunch of different places inside of our application.   
@@ -35,7 +37,9 @@ Action Creator --> Action --> dispatch --> Reducers --> State
 Redux codepen link:- https://codepen.io/parasagrawal71/pen/VwLJpaZ   
 (same code available in "redux in vanilla JS" folder).   
 
-To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> Gets fed to.. --> [dispatch] --> Forwards the action to each reducers.. --> [Reducers] --> Creates new.. --> [State] --> Wait until we need to update state again.   
+<pre>
+To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> Gets fed to.. --> [dispatch] --> Forwards the action to each reducers.. --> [Reducers] --> Creates new.. --> [State] --> Wait until we need to update state again.  
+</pre>
 
 * Redux was not designed to work with react. So, We are using React-Redux library which contains a bunch of helper functions inside of it to work redux with react.   
 <pre>
