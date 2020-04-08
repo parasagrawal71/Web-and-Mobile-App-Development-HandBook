@@ -38,9 +38,11 @@ Redux codepen link:- https://codepen.io/parasagrawal71/pen/VwLJpaZ
 To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> Gets fed to.. --> [dispatch] --> Forwards the action to each reducers.. --> [Reducers] --> Creates new.. --> [State] --> Wait until we need to update state again.   
 
 * Redux was not designed to work with react. So, We are using React-Redux library which contains a bunch of helper functions inside of it to work redux with react.   
+<pre>
   React  -->   React-Redux     --> Redux   
 	 <--  (Gets React and  <--   
 	       Redux to work   
 	       together)   
+</pre>	       
 
 * __How React-Redux works?__:-   
