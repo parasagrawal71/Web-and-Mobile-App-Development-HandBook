@@ -6,6 +6,20 @@ import "./App.css";
 // import ChildToParent from "./components/ChildToParent";
 // import SingleImage from './components/SingleImage';
 
+// If directory is imported, by default it return index.js file
+// Webpack is the dependency or tool that combines all the different files together, is the one which gives the index.js file if the only directory is specified.
+import Example from "./components";
+
+// If there is no index.js file inside the directory, it will throw ERROR (Module not found: Can't resolve './assets')
+// import Example from "./assets"; // ERROR
+
+//Component name starting with small letter doesn't work
+// Warning: The tag <example> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.
+// import example from "./components"; // Doesn't work
+
+// import AnyName from "./components/AnyName"; // Doesn't work
+// import AnyName from "./components/AnyName.js"; // Doesn't work
+
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // const App = () => {
@@ -340,7 +354,10 @@ import "./App.css";
 
 class App extends React.Component {
   render() {
-    return <div>Next topic is Redux</div>;
+    // return <div>Next topic is Redux</div>;
+    return <Example />;
+    // return <example />;
+    // return <AnyName />;
   }
 }
 
