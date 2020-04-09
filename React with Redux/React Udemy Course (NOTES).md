@@ -53,3 +53,37 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 </pre>	       
 
 * __How React-Redux works?__:-   
+<pre>
+   - - - - - - -  (as prop)
+  |    store   |  --------> [Provider]  (at the Top of the heirarchy, above App)
+  | (reducers) |                |
+   - - - - - - - 	       \_/
+			      [App] 
+			        |
+    - - - - - - - -	       \_/
+  | Action Creators | 	    [Connect] (communicates with the Provider through context system not the prop system)
+    - - - - - - - -	        |
+			       \_/
+		           [Components]
+</pre>  
+ 
+<pre>				    -------------------
+   - - - - - - -  (as prop)	    |	              |
+  |    store   |  --------> [Provider]	   <-----     |  
+  | (reducers) |                |	        |     |
+   - - - - - - - 	       \_/     (Tell me |     |
+			      [App]   about any |     | (here is the new data with changes)
+			        |      changes  |     |
+ - - - - - - - -  (change)     \_/     in data) |     |
+|Action Creators| ------->  [Connect]     -------     |
+ - - - - - - - -    		|        <-------------	
+		       (data as |
+		         prop) \_/
+			   [Components]
+</pre>
+
+Points:-   
+	- Provider and Connect are the components that are going to be created by react-redux library. We will be creating instances of them and pass some props into both of them to configure them to work.   
+	- After combining all the reducers, we get something called store that contains all our reducers and state. This is passed as a prop to Provider. Then, Provider will have eternal reference to the store. It will be providing informations to all of our components.   
+	- Provider is rendered at the top of the heirarchy. It means App is shown inside of Provider.   
+	- Context system allows any Parent to communicate with any child even if there are childs in-between such as Provider to Connect with App in-between.   
