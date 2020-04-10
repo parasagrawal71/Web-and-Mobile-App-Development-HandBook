@@ -87,3 +87,20 @@ Points:-
 	- After combining all the reducers, we get something called store that contains all our reducers and state. This is passed as a prop to Provider. Then, Provider will have eternal reference to the store. It will be providing informations to all of our components.   
 	- Provider is rendered at the top of the heirarchy. It means App is shown inside of Provider.   
 	- Context system allows any Parent to communicate with any child even if there are childs in-between such as Provider to Connect with App in-between.   
+
+* __What is react-thunk__:-   
+Redux-thunk is a middleware to help us make network requests from redux side of our app.   
+Q) What is Middleware?   
+A) Middleware is computer software that provides services to software applications beyond those available from the operating system.   
+Example,   
+The term "Middleware" applies to the redux library. Middleware are essentially functions that are going to change the behaviour of our redux store. So they will add new capabilities or new features to the redux side of our application.   
+
+* Middleware in Redux:-   
+- Functions that gets called with every action we dispatch.   
+- Has ability to stop, modify, or otherwise mess around with actions.   
+<pre>
+To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> 
+Gets fed to.. --> [dispatch] --> Forwards action to --> __[Middleware]__ --> sends action to --> [Reducers] --> 
+Creates new.. --> [State] --> Wait until we need to update state again.  
+</pre> 
+
