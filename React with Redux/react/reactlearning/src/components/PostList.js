@@ -5,7 +5,7 @@ import { fetchAllPosts } from "../actions/posts";
 class PostList extends Component {
   componentDidMount() {
     // console.log(fetchAllPosts());  // Wrong!!!
-    console.log(this.props.fetchAllPosts());
+    this.props.fetchAllPosts();
   }
 
   render() {
