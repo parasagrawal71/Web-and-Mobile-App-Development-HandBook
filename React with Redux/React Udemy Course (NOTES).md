@@ -96,8 +96,8 @@ Example,
 The term "Middleware" applies to the redux library. Middleware are essentially functions that are going to change the behaviour of our redux store. So they will add new capabilities or new features to the redux side of our application.   
 
 * Middleware in Redux:-   
-- Functions that gets called with every action we dispatch.   
-- Has ability to stop, modify, or otherwise mess around with actions.   
+	- Functions that gets called with every action we dispatch.   
+	- Has ability to stop, modify, or otherwise mess around with actions.   
 <pre>
 To change state of our app, we call an.. --> [Action Creator] --> produces an.. --> [Action] --> 
 Gets fed to.. --> [dispatch] --> Forwards action to --> __[Middleware]__ --> sends action to --> [Reducers] --> 
