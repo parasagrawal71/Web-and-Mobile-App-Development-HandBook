@@ -1,0 +1,1 @@
+This folder contains "Notes" for anything that doesn't fall into any folder.
