@@ -1,5 +1,6 @@
 import jsonPlaceholder from "../apis/jsonPlaceholder";
 
+/*
 // Action Creators
 export const fetchAllPosts = async () => {
   // Bad Approach!!! and Why?
@@ -14,6 +15,7 @@ export const fetchAllPosts = async () => {
   return {
     type: "FETCH_POSTS",
     payload: response,
+    // payload: response.data, // NOT WORKING
     // payload: promise,
   };
 };
@@ -31,3 +33,18 @@ export const fetchAllPosts = async () => {
 
 // Solution:-
 // Use custom middleware for async actions.
+*/
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+// Action Creators
+export const fetchAllPosts = () => {
+  return function (dispatch, getState) {
+    const response = jsonPlaceholder.get("/posts");
+
+    return {
+      type: "FETCH_POSTS",
+      payload: response,
+    };
+  };
+};
