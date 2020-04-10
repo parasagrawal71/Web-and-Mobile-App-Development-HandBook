@@ -21,7 +21,7 @@ class SongList extends Component {
   }
 
   render() {
-    console.log(this.props); // OUTPUT:- {songs: Array(4), dispatch: ƒ}
+    console.log("props ", this.props); // OUTPUT:- {songs: Array(4), dispatch: ƒ}
     // OUTPUT:- After passing an action creator selectSong as 2nd argument to connect,
     // {songs: Array(4), selectSong: ƒ}
     // Now instead of doing action = selectSong(song) and store.dispatch(action);
@@ -37,7 +37,7 @@ class SongList extends Component {
 // mapStateToProps: changing state to props
 const mapStateToProps = (state) => {
   // state is every data inside our redux store
-  console.log(state); // OUTPUT:- {songs: Array(4), selectedSong: null}
+  console.log("state ", state); // OUTPUT:- {songs: Array(4), selectedSong: null}
 
   //   return state;
   return { songs: state.songs };
