@@ -37,14 +37,32 @@ export const fetchAllPosts = async () => {
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-// Action Creators
-export const fetchAllPosts = () => {
-  return function (dispatch, getState) {
-    const response = jsonPlaceholder.get("/posts");
+// // Action Creators
+// export const fetchAllPosts = () => {
+//   return async dispatch => { // (dispatch, getState) - getState is optional
+//     const response = await jsonPlaceholder.get("/posts");
 
-    return {
+//     // Instead of returning an action, we will dispatch our action manually
+//     // return {
+//     //   type: "FETCH_POSTS",
+//     //   payload: promise,
+//     // };
+
+//     dispatch({
+//       type: "FETCH_POSTS",
+//       payload: response,
+//     });
+
+//   };
+// };
+
+// Using ES2015 Syntax, In short
+// Action Creators
+export const fetchAllPosts = () => async dispatch => { 
+    const response = await jsonPlaceholder.get("/posts");
+
+    dispatch({
       type: "FETCH_POSTS",
       payload: response,
-    };
-  };
+    });
 };
