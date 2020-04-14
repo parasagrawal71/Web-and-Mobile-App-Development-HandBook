@@ -105,15 +105,16 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 </pre> 
 
 * Normal Rules:-   
-- Action Creators __must__ return action objects.   
-- Actions must have a type property.   
-- Actions can optionally have a payload.   
+	- Action Creators __must__ return action objects.   
+	- Actions must have a type property.   
+	- Actions can optionally have a payload.   
 
 * Rules with Redux-thunk:-   
-- Action Creators __can__ return action objects.   
+	- Action Creators __can__ return action objects.   
 	OR   
-- Action Creators __can__ return functions(then redux-thunk will automatically calls the function).   
-- If an action object gets returned, it must have a type.   
-- If an action object gets returned, it can optionally have a 'payload'.   
+	- Action Creators __can__ return functions(then redux-thunk will automatically calls the function).   
+	- If an action object gets returned, it must have a type.   
+	- If an action object gets returned, it can optionally have a 'payload'.   
 
-* Check Fig1 in diagrams folder - This shows how redux-thunk can return a function or an action.
+* Check Fig1 in diagrams folder - This shows how redux-thunk can return a function or an action.   
+
