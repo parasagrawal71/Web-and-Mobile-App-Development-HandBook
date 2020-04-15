@@ -159,4 +159,24 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 	So on
 	</pre>
 	- Must not return reach 'out of itself' to decide what value to return (reducers are pure).   
+	<pre>
+	    Previuos State    Action
+		    |__       __|
+		       |     |    //BAD
+		       REDUCER   ------>   [API REQUEST]  
+			  |
+	               New State
+	
+	const someReducer = (state, action) => {
+		// BAD
+		return document.querySelector('input')
+		
+		// BAD
+		return axios.get('/posts')
+		
+		// GOOD, Use argument values
+		return state + action;
+	}
+
+	</pre>
 	- Must not mutate its input 'state' argument.   
