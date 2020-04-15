@@ -1,5 +1,6 @@
-Each folder contains one project folder that contains the code that I have tried while learning that language or technology.   
+Each folder contain one or more project folders that contains the code that I have tried while learning that language or technology.   
 It also contains the links or any notes related to that language, or framework, etc.   
+It also has separate folder for each courses.   
 
 FOLLOW This (starting with small letter):   
 	1. Write the project folder name same as language name. Example, kotlin.   
