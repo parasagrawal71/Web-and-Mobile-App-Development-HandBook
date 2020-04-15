@@ -118,3 +118,7 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 
 * Check Fig1 in diagrams folder - This shows how redux-thunk can return a function or an action.   
 
+* __Rules of Reducers__:-
+	- Must return any value besides 'undefined'   
+	- Produces 'state', or data to be used inside of your app using only previous state and the action.   
+	- 
