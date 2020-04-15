@@ -121,4 +121,8 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 * __Rules of Reducers__:-
 	- Must return any value besides 'undefined'   
 	- Produces 'state', or data to be used inside of your app using only previous state and the action.   
-	- 
+	<pre>
+		DAIGRAM
+	</pre>
+	- Must not return reach 'out of itself' to decide what value to return (reducers are pure).   
+	- Must not mutate its input 'state' argument.   
