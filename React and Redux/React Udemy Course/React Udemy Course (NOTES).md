@@ -122,7 +122,41 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 	- Must return any value besides 'undefined'   
 	- Produces 'state', or data to be used inside of your app using only previous state and the action.   
 	<pre>
-		DAIGRAM
+	First time a reducer is called(each reducer is automatically invocated one time when redux app starts).
+		undefined    Action#1  <-- Two arguments to a reducer
+		    |__       __|
+		       |     |
+		       REDUCER
+			  |
+		       STATE v1
+
+	Example, const selectedSongReducer = (selected_song = null, action) => {}
+	selectedSongReducer(undefined, {type: 'SOMETHING'})    <-- [automatic invocation]
+	
+	ES2015 Syntax:- selected_song = null // null as default value which is executed only once at the first time.
+	Normally, it is
+	if(selected_song === undefined) {
+		selected_song = null;
+	}
+	
+
+
+	Second time a reducer is called
+		 STATE v1    Action#2
+		    |__       __|
+		       |     |
+		       REDUCER
+			  |
+	               STATE v2
+
+	Third time a reducer is called
+		 STATE v2    Action#3
+		    |__       __|
+		       |     |
+		       REDUCER
+			  |
+	               STATE v3
+	So on
 	</pre>
 	- Must not return reach 'out of itself' to decide what value to return (reducers are pure).   
 	- Must not mutate its input 'state' argument.   
