@@ -184,13 +184,18 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 	  Incase of Array and Object, don't mutate it as these are mutable in javascript.
 	  Incase of Strings and Numbers since they are immutable, there is no problem like this.
 	  const someReducer = (state, action) => {
-		//When State is Array: BAD
+		We can mutate state, there is no problem technically. Redux is not going to throw any error.
+		But Redux uses !== operator which comapares references of object or array, so even if we have changed the value of object or array react application will not re-render as !== condition wouldn't be satisfied.(as per my understanding)
+
+		//State is Array: BAD
 		state[0] = 'Sam'
 		state.pop()
 		state.push('something')
 
-		//When State is Object: BAD
+		//State is Object: BAD
 		state.name = 'Sam'
 		state.age = 30
+
+		return state;
 	  }
 	</pre>   
