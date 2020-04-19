@@ -1,4 +1,5 @@
 import jsonPlaceholder from "../apis/jsonPlaceholder";
+import _ from 'lodash';
 
 /*
 // Action Creators
@@ -63,6 +64,68 @@ export const fetchAllPosts = () => async dispatch => {
 
     dispatch({
       type: "FETCH_POSTS",
-      payload: response,
+      payload: response.data,
     });
 };
+
+// export const fetchUser = (userId) => async (dispatch) => {
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+
+//   dispatch({
+//     type: 'FETCH_USER',
+//     payload: response.data,
+//   })
+// }
+
+// Two types of Solution for calling API only once for each user(Solution for Overfetching)
+// --------------------------------------
+// Ist Solution:- lodash memoize function
+// Disadvantage:- If for some reason(eg, user data has been changed), we want to re-fetch user details we can't.
+// So we have to create a separate action creator to re-fetch user details.
+
+// export const fetchUser = _.memoize(function (userId) { // still getting called multiple times with same userId
+//   return async function (dispatch){
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+
+//     dispatch({
+//       type: 'FETCH_USER',
+//       payload: response.data,
+//     })
+//   }
+// });
+
+// export const fetchUser = function (userId) { // still getting called multiple times with same userId
+//   return _.memoize(async function (dispatch){
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+
+//     dispatch({
+//       type: 'FETCH_USER',
+//       payload: response.data,
+//     })
+//   });
+// };
+
+// export const fetchUser = _.memoize(function (userId) {
+//   return _.memoize(async function (dispatch){
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+
+//     dispatch({
+//       type: 'FETCH_USER',
+//       payload: response.data,
+//     })
+//   });
+// });
+
+export const fetchUser = (userId) => (dispatch) => _fetchUser(userId, dispatch);
+
+const _fetchUser = _.memoize(async (userId, dispatch) => {
+  // Underscore means this is a private function. So other engineers should not call this unless they know what they are doing it.
+  const response = await jsonPlaceholder.get(`/users/${userId}`);
+
+  dispatch({
+    type: 'FETCH_USER',
+    payload: response.data,
+  })
+})
+
+// 2nd Solution:-
