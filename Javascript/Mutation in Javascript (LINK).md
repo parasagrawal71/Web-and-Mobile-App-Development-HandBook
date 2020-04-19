@@ -1,5 +1,6 @@
 https://medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa	
 
+Also check "Fig1 - Ways to avoid Mutation in JS" image in diagrams folder inside this folder.	
 
 * __Mutating Array__   
 const COLORS = ['red', 'green']   

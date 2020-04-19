@@ -116,7 +116,7 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 	- If an action object gets returned, it must have a type.   
 	- If an action object gets returned, it can optionally have a 'payload'.   
 
-* Check Fig1 in diagrams folder - This shows how redux-thunk can return a function or an action.   
+* Check Fig1 in diagrams folder inside this folder - This shows how redux-thunk can return a function or an action.   
 
 * __Rules of Reducers__:-
 	- Must return any value besides 'undefined'   
