@@ -180,3 +180,17 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 
 	</pre>
 	- Must not mutate its input 'state' argument.   
+	<pre>
+	  Incase of Array and Object, don't mutate it as these are mutable in javascript.
+	  Incase of Strings and Numbers since they are immutable, there is no problem like this.
+	  const someReducer = (state, action) => {
+		//When State is Array: BAD
+		state[0] = 'Sam'
+		state.pop()
+		state.push('something')
+
+		//When State is Object: BAD
+		state.name = 'Sam'
+		state.age = 30
+	  }
+	</pre>   
