@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchAllPosts } from "../actions/posts";
+import { fetchPostsAndUsers } from "../actions/posts";
 import AuthorName from './AuthorName';
 
 class PostList extends Component {
   componentDidMount() {
     // console.log(fetchAllPosts());  // Wrong!!!
-    this.props.fetchAllPosts();
+    this.props.fetchPostsAndUsers();
   }
 
   renderList() {
@@ -28,4 +28,4 @@ const mapStateToProps = (state) => {
   return { posts: state.posts };
 };
 
-export default connect(mapStateToProps, { fetchAllPosts })(PostList);
+export default connect(mapStateToProps, { fetchPostsAndUsers })(PostList);

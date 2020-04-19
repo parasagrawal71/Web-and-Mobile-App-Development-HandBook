@@ -68,14 +68,14 @@ export const fetchAllPosts = () => async dispatch => {
     });
 };
 
-// export const fetchUser = (userId) => async (dispatch) => {
-//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+export const fetchUser = (userId) => async (dispatch) => {
+  const response = await jsonPlaceholder.get(`/users/${userId}`);
 
-//   dispatch({
-//     type: 'FETCH_USER',
-//     payload: response.data,
-//   })
-// }
+  dispatch({
+    type: 'FETCH_USER',
+    payload: response.data,
+  })
+}
 
 // Two types of Solution for calling API only once for each user(Solution for Overfetching)
 // --------------------------------------
@@ -105,7 +105,7 @@ export const fetchAllPosts = () => async dispatch => {
 //   });
 // };
 
-// export const fetchUser = _.memoize(function (userId) {
+// export const fetchUser = _.memoize(function (userId) { // WORKING
 //   return _.memoize(async function (dispatch){
 //   const response = await jsonPlaceholder.get(`/users/${userId}`);
 
@@ -116,16 +116,41 @@ export const fetchAllPosts = () => async dispatch => {
 //   });
 // });
 
-export const fetchUser = (userId) => (dispatch) => _fetchUser(userId, dispatch);
+// export const fetchUser = (userId) => (dispatch) => _fetchUser(userId, dispatch);
 
-const _fetchUser = _.memoize(async (userId, dispatch) => {
-  // Underscore means this is a private function. So other engineers should not call this unless they know what they are doing it.
-  const response = await jsonPlaceholder.get(`/users/${userId}`);
+// const _fetchUser = _.memoize(async (userId, dispatch) => {
+//   // Underscore means this is a private function. So other engineers should not call this unless they know what they are doing it.
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
 
-  dispatch({
-    type: 'FETCH_USER',
-    payload: response.data,
-  })
-})
+//   dispatch({
+//     type: 'FETCH_USER',
+//     payload: response.data,
+//   })
+// })
 
 // 2nd Solution:-
+
+export const fetchPostsAndUsers = () => async (dispatch, getState) => {
+  await dispatch(fetchAllPosts()); // fetchAllPosts returns a function to redux-thunk
+
+  // const userIds = _.uniq(_.map(getState().posts, 'userId'));
+  // userIds.forEach(id => {
+  //   dispatch(fetchUser(id));
+  // }) 
+  
+  // // forEach doesn't work with async await, use map Instead
+  // await Promise.all(userIds.map(id => {
+  //   dispatch(fetchUser(id));
+  // }))
+  // await Promise.all(userIds.forEach(id => { // ERROR
+  //   dispatch(fetchUser(id));
+  // }))
+
+  _.chain(getState().posts)
+    .map('userId') // first argument will be getState().posts to the map function
+    .uniq()
+    .forEach(id => dispatch(fetchUser(id)))
+    .value()
+
+  console.log(getState().users)
+}
