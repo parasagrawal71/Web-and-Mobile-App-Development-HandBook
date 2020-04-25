@@ -199,3 +199,17 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 		return state;
 	  }
 	</pre>   
+
+* __How React-router works?__	
+	<pre>
+	     (History)       -->       (BrowserRouter)
+	Keeps track of the        Listens to "history" for
+	address bar in your	  any changes to the URL.
+					  ___|___
+					 |       |
+				        \_/     \_/
+				      Route	Route 			Visible only when the 'path' matches the current URL.
+				      path="/"	path="/pagetwo"
+				     [PageOne   [PageTwo
+				     Component]  Component]			
+	</pre>
