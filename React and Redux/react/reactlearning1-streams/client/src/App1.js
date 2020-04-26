@@ -6,7 +6,7 @@ import Routes from './routes';
 const App = () => {
   return (
     <div>
-      {/* Error: Invariant failed: You should not use <Link> outside a <Router></Router> */}
+      {/* Error: Invariant failed: You should not use <Link> outside a <Router></Router> BrowserRouter here */}
       {/* <Header />  */}
       <Routes />
     </div>

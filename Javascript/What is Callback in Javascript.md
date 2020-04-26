@@ -1,0 +1,1 @@
+A callback is a function that is to be executed after another function has finished executing — hence the name 'call back'. More complexly put: In JavaScript, functions are objects. ... Any function that is passed as an argument is called a callback function.
