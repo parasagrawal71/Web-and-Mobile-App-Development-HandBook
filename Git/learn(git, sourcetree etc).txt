@@ -1,0 +1,16 @@
+https://www.youtube.com/results?search_query=sourcetree+bitbucket+tutorial
+
+
+
+LF will be replaced by CRLF in git - What is that and is it important? [duplicate]
+https://stackoverflow.com/questions/5834014/lf-will-be-replaced-by-crlf-in-git-what-is-that-and-is-it-important
+
+
+
+What is the difference between 'git pull' and 'git fetch'?
+https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+
+
+
+what does the syntax of git fetch mean
+https://stackoverflow.com/questions/28249330/what-does-the-syntax-of-git-fetch-mean
