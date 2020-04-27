@@ -1,0 +1,1 @@
+This folder contains "Shortcuts" for anything, maintained in separate files.
