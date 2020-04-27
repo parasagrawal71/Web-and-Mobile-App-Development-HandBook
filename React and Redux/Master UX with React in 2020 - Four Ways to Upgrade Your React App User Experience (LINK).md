@@ -7,7 +7,7 @@ https://levelup.gitconnected.com/master-ux-with-react-in-2020-four-ways-to-upgra
 2. Tactic 2: Implement Placeholder Content	
 	* React-Content-Loader and Create-Content-Loader	
 
-3.Tactic 3: Master the Fade In	
+3. Tactic 3: Master the Fade In	
 	* react-fade-in	
 
 4. Tactic 4: Insert lovable micro-interactions	
