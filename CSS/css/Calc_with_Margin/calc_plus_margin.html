@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+            }
+            .container{
+            }
+            .element1, .element2 {
+                float: left;
+                background-color: brown;
+                height: 100px;
+                /* Doesn't work if there is no space around hypen */
+                /* width: calc(50%-20px); */
+                width: calc(50% - 20px);
+              }
+              
+              .element2 {
+                  margin-left: 40px; 
+              }
+        </style>
+        <!-- width: calc(100% - 100px); //This is right -->
+        <!-- width: calc(100%-100px); // this is wrong because there are no spaces. -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="element1">
+                hi
+            </div>
+            <div class="element2">
+                hi
+            </div>
+        </div>
+    </body>
+</html>

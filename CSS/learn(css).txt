@@ -1,0 +1,87 @@
+https://www.w3schools.com/css/css3_gradients.asp
+
+
+div is inline or block
+https://www.google.com/search?q=div+is+inline+or+block&rlz=1C1GGRV_enIN858IN858&oq=div+is+in&aqs=chrome.0.0j69i57j0l4.16196j0j7&sourceid=chrome&ie=UTF-8
+
+
+https://www.w3schools.com/css/css_table.asp
+
+
+transform, translate
+https://www.quackit.com/css/functions/css_translate_function.cfm
+other sites also
+
+
+for cell padding, we use padding only not cell-padding
+
+
+<col> tag
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+
+
+Centering Percentage Width/Height Elements
+https://css-tricks.com/centering-percentage-widthheight-elements/
+
+
+How TO - Center Elements Vertically,How To Center Anything Vertically,
+How To Center Vertically AND Horizontally
+https://www.w3schools.com/howto/howto_css_center-vertical.asp
+
+
+HTML Responsive Web Design(using width in % and vw for font sizes)
+https://www.w3schools.com/html/html_responsive.asp
+
+
+For responsive text, use font size in vw
+
+
+What is the difference between using `text-align:center` and `margin: 0 auto` to center an element in CSS?
+https://stackoverflow.com/questions/2392563/what-is-the-difference-between-using-text-aligncenter-and-margin-0-auto-to
+
+
+CSS Layout - Horizontal & Vertical Align
+https://www.w3schools.com/css/css_align.asp
+
+
+How to resize an image with HTML
+https://www.computerhope.com/issues/ch000055.htm
+
+
+nth child preference
+
+
+Valid to use <a> (anchor tag) without href attribute?
+https://stackoverflow.com/questions/10510191/valid-to-use-a-anchor-tag-without-href-attribute/10510353
+
+
+Specificity
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity 
+
+
+What is WebKit and how is it related to CSS?
+https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css
+
+
+line-clamp
+https://css-tricks.com/almanac/properties/l/line-clamp/
+
+
+fb
+https://m.facebook.com/?refsrc=http%3A%2F%2Fwww.google.com%2F&_rdr
+
+
+Set the limit of text length to N lines using CSS
+https://www.geeksforgeeks.org/set-the-limit-of-text-length-to-n-lines-using-css/
+
+
+max-lines
+https://css-tricks.com/max-lines/
+
+
+Clearfix
+https://coreui.io/docs/utilities/clearfix/
+
+
+padding not working in span tag
+https://stackoverflow.com/questions/35592168/padding-not-working-in-span-tag
