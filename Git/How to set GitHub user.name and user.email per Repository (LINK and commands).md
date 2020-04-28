@@ -4,4 +4,5 @@ https://crunchify.com/how-to-set-github-user-name-and-user-email-per-repository-
 
 * Execute commands:   
 git config user.email "email@domain.com"   
-git config user.name "Name Surname"   
+git config user.name "Name Surname"  
+ 
