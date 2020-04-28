@@ -1,0 +1,10 @@
+node_modules/
+build/
+build/index.html
+yarn.lock
+yarn-error.log
+.DS_Store
+.vscode
+.idea
+Podfile.lock
+*.hprof
