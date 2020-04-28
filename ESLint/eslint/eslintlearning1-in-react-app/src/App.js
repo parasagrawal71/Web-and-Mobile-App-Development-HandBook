@@ -11,7 +11,7 @@ import React from 'react';
 // Run 'yarn lint' script to remove errors and warnings from all files.
 
 const App = () => {
-  return <div>ESLint</div>;
+  return <div>ESLint with husky</div>;
 };
 
 export default App;
