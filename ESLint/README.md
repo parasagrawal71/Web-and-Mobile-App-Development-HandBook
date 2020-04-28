@@ -9,4 +9,5 @@ FOLLOW this:-
 Install required dev dependencies:-   
 // npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier   
 // npx install-peerdeps --dev eslint-config-airbnb   
-Then, copy .eslintrc.json and .prettierrc files from this ESLint root folder.   
+Then, copy .eslintrc.json and .prettierrc files from this ESLint root folder to the project root folder.   
+Add .eslintignore file to the project root folder to ignore files from ESLinting.   
