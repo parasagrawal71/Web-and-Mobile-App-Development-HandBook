@@ -1,0 +1,1 @@
+https://www.quora.com/How-do-I-reset-all-settings-changes-in-VS-Code
