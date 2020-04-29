@@ -1,1 +1,1 @@
-This folder contains "Notes" for Git.
+This folder contains "Notes" for Git.   
