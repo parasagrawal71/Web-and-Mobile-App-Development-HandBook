@@ -1,7 +1,7 @@
 __Branching Model that I follow:-__   
 * The main branches:-   
-	- master(protected, I can only commit & push in this branch and merge any branch into master)   
-	- develop(protected, I can only commit & push in this branch and merge any branch into develop after review)   
+	- master(protected, I can only commit & push in this branch and I can only merge any branch into master)   
+	- develop(protected, I can only commit & push in this branch and I can only merge any branch into develop after review)   
 
 * Supporting branches:-   
 	- Feature branches   
