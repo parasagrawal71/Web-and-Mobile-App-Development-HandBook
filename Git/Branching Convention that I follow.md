@@ -1,7 +1,12 @@
 __Branching Model that I follow:-__   
 * The main branches:-   
-	- master(protected, I can only commit & push in this branch and I can only merge any branch into master)   
-	- develop(protected, I can only commit & push in this branch and I can only merge any branch into develop after review)   
+	- master   
+		- protected, Noone can commit & push in master even I cannot commit. Only Merging of any branch into master is possible.   
+		- Merge only develop to master, for convention sake. Release and Hotfix branch can be merged into master.     
+		- I can only directly merge any branch into master and Others have to raise a PR, that I will approve after reviewing.    
+	- develop   
+		- protected, Noone can commit & push in develop even I cannot commit. Only Merging of any branch into develop is possible.        
+		- I can only directly merge any branch into develop and Others have to raise a PR, that I will approve after reviewing.   
 
 * Supporting branches:-   
 	- Feature branches   

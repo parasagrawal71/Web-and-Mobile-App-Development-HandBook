@@ -4,7 +4,7 @@ https://stackoverflow.com/questions/40462111/git-prevent-commits-in-master-branc
 To enable a hook script, put a file in the hooks subdirectory of your .git directory that is named appropriately (without any extension) and is executable.   
 The type of script is file in Windows.   
 
-Add following code in pre-commit file(with no extension) in .git/hooks directory:-
+Add following code in pre-commit file(with no extension) in .git/hooks directory:-   
 <pre>
 #!/bin/sh
 
@@ -15,3 +15,5 @@ if [ "$branch" = "master" ]; then
   exit 1
 fi
 </pre>
+
+Does it work locally only?
