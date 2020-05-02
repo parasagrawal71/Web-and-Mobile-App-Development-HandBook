@@ -213,3 +213,10 @@ Creates new.. --> [State] --> Wait until we need to update state again.
 				     [PageOne   [PageTwo
 				     Component]  Component]			
 	</pre>
+
+* In Redux-Devtools:-   
+  Debug session:- Saves all data in Redux store between refreshes of the page.   
+  Use debug session as:-   
+  http://localhost:3000/?debug_session=fdgdfg [randomstring]   
+  http://localhost:3000/?debug_session=logged_in [named debug session]   
+  http://localhost:3000/?debug_session=logged_out [named debug session]   
