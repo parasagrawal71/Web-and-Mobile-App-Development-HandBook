@@ -1,0 +1,1 @@
+This folder contains "Notes" related to API.
