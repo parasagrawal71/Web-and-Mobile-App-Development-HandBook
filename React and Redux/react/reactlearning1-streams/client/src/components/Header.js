@@ -1,18 +1,22 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import GoogleAuth from '../components/GoogleAuth';
+import GoogleAuth from "../components/GoogleAuth";
 
 const Header = () => {
-    return <div style={{display: 'flex', justifyContent: 'space-between'}}>
-        <div>
-            <Link to="/streams/show">Streamer</Link>
-        </div>
-        {/* <div>
-            <Link to="/">Login</Link>
-        </div> */}
+  return (
+    <div className="ui secondary pointing menu">
+      <div className="item">
+        <Link to="/">Streamy</Link>
+      </div>
+      <div className="right menu">
+        <Link to="/" className="item">
+          All Streams
+        </Link>
         <GoogleAuth />
-    </div>;
-}
+      </div>
+    </div>
+  );
+};
 
 export default Header;
