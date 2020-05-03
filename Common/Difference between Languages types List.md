@@ -5,4 +5,14 @@ Nowadays, scripts are generally associated with web development where they are w
 \- Server Side Scripting Languages   
 \- Client Side Scripting Languages<br /><br />
 Server-side scripting languages create the scripts that run on the server and hence minimize the workload of a browser. The functionality of your website is written in those scripting languages. The most commonly used server-side scripting languages are Perl, Ruby, Python, PHP, etc.<br /><br />
-Client-side scripting languages create the scripts that run on the client side (i.e. your browser). These are sent from the server by server-side scripts. Some good examples are JavaScript, jQuery, CSS etc.   
+Client-side scripting languages create the scripts that run on the client side (i.e. your browser). These are sent from the server by server-side scripts. Some good examples are JavaScript, jQuery, CSS etc.<br /><br />
+
+JavaScript is scripting language that runs in the browser.<br /><br />
+
+Node JS:-   
+Node JS is not a language, it uses JavaScript language as the main programming interface. Node is a desktop application (or runtime environment) that runs JavaScript files. Node runtime can be compared to the JVM Java Virtual Machine or the IDLE Python interpreter.   
+Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming. Node.js was built on the Google V8 JavaScript engine.   
+Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser.   
+Written in C, C++, Javascript<br /><br />
+
+NodeJS is mainly C, C++ which does have to be __compiled down a machine code__ and Javascript is used in order to interface it.   
