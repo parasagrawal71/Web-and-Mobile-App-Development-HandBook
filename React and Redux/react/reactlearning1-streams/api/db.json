@@ -12,26 +12,9 @@
     },
     {
       "title": "My Stream",
-      "description": "This is a cool stream",
-      "userId": "111168931774516102777",
-      "id": 3
-    },
-    {
-      "title": "ikhb",
-      "description": "xsaddddddddddddddddddddddddddddddddd",
-      "id": 4
-    },
-    {
-      "title": "pro",
-      "description": "heyheyhey",
+      "description": "This is cool stream",
       "userId": "111168931774516102777",
       "id": 5
-    },
-    {
-      "title": "sadsad",
-      "description": "sadsadsadsadassssssssss",
-      "userId": "111168931774516102777",
-      "id": 6
     }
   ]
 }
