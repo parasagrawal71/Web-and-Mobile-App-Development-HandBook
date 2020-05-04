@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Modal</title>
+    <style>
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 300px;
+        background-color: darkgray;
+      }
+      .content {
+        margin-left: 300px;
+      }
+      .modal {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: grey;
+        z-index: 1;
+      }
+      .modal-body {
+        background-color: white;
+        margin: auto;
+        width: 30%;
+        height: 30%;
+      }
+      .positioned {
+        position: relative;
+        z-index: 0;
+        /* z-index: 999; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Place it here -->
+    <div class="positioned">
+      <div class="modal">
+        <div class="modal-body">
+          <h1>I am a modal</h1>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">I am a sidebar</div>
+    <h1 class="content">I am some content</h1>
+  </body>
+  <!-- <body>
+    <div class="sidebar">I am a sidebar</div>
+    <div class="positioned">
+      <div class="modal">
+        <div class="modal-body">
+          <h1>I am a modal</h1>
+        </div>
+      </div>
+    </div>
+    positioned class comes after, so it wins
+    <h1 class="content">I am some content</h1>
+  </body> -->
+</html>
