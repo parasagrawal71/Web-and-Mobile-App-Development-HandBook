@@ -1,0 +1,2 @@
+Event Propagation:-   
+Default JS or default HTML behaviour:- if we ever trigger an event on some child elements and that child element does not handle that event, the event is going to bubble up to some parent element until it's eventually caught with an event handler.   
