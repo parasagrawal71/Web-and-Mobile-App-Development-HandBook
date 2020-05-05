@@ -30,7 +30,7 @@ project-root-folder
     │
     ├── reducers
     │   ├── index.js
-    │   └── separateReducer.js
+    │   └── specific-reducer-name.js [eg, authReducer.js]
     │
     ├── assets
     │   ├── constants
