@@ -4,25 +4,25 @@ project-root-folder
 └── src
     ├── index.js
     ├── components
-    │   └── component-name
-    │       ├── index.js
-    │       ├── style.css
-    │       ├── test.js
-    │       └── style.scss
+    │   └── componentName
+    │       ├── componentName.js
+    │       ├── componentNameStyles.css
+    │       ├── componentNameTest.js
+    │       └── componentNameStyles.scss
     │ 
     ├── pages/screens
     │	├── App
     │	│   ├── App.js
     │	│   ├── App.css
     │	│   └── App.test.js
-    │   └── page-name
-    │	    ├── index.js
-    │	    ├── style.css
-    │       ├── test.js
-    │       └── style.scss
+    │   └── pageName
+    │	    ├── pageName.js
+    │	    ├── pageNameStyles.css
+    │       ├── pageNameTest.js
+    │       └── pageNameStyles.scss
     │
     ├── services/apis
-    │   └── api-provider-name.js
+    │   └── apiProviderName.js
     │
     ├── actions
     │   ├── index.js
@@ -30,12 +30,15 @@ project-root-folder
     │
     ├── reducers
     │   ├── index.js
-    │   └── specific-reducer-name.js [eg, authReducer.js]
+    │   └── specificReducerName.js [eg, authReducer.js]
+    │
+    ├── utils/helpers // This is a folder full of helper functions that are used globally.
+    │   └── index.js
     │
     ├── assets
     │   ├── constants
     │   │   ├── index.js           
-    │   │   └── specific-constants-group-name.js
+    │   │   └── specificConstantsGroupName.js
     │   │
     │   └── images
     │
