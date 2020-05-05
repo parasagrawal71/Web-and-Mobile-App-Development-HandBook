@@ -24,10 +24,18 @@ project-root-folder
     ├── services/apis
     │   └── api-provider-name.js
     │
+    ├── actions
+    │   ├── index.js
+    │   └── types.js
+    │
+    ├── reducers
+    │   ├── index.js
+    │   └── separateReducer.js
+    │
     ├── assets
     │   ├── constants
     │   │   ├── index.js           
-    │   │   └── specific-constants-group.js
+    │   │   └── specific-constants-group-name.js
     │   │
     │   └── images
     │
