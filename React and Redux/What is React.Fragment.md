@@ -4,19 +4,19 @@ A common pattern in React is for a component to return multiple elements. Fragme
 Example,   
 <pre>
 return (
-    <React.Fragment>
-      <ChildA />
-      <ChildB />
-      <ChildC />
-    </React.Fragment>
+    < React.Fragment>
+      < ChildA />
+      < ChildB />
+      < ChildC />
+    < /React.Fragment>
   );
-
+  
 Short syntax,
     <>
-      <ChildA />
-      <ChildB />
-      <ChildC />
-    <>
+      < ChildA />
+      < ChildB />
+      < ChildC />
+    < />
 </pre>
 Some Code Quality checkers inside the editor can throw an error saying this short syntax (<></>) is not valid.   
 So, React.Fragment is preferable.   
