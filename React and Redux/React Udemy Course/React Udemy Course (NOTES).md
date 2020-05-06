@@ -220,3 +220,22 @@ Creates new.. --> [State] --> Wait until we need to update state again.
   http://localhost:3000/?debug_session=fdgdfg [randomstring]   
   http://localhost:3000/?debug_session=logged_in [named debug session]   
   http://localhost:3000/?debug_session=logged_out [named debug session]   
+
+* Context System:-   
+There are two ways of getting information into the context object(or, pipe) and two ways of getting information out of context object.   
+<pre>
+   Source of Data {   [Default Value]  or  | Parent Component |
+ 			    |		   |    [Provider]    |
+                            |   		    |
+                            |_______________________|
+					|
+				  Context Object
+			    ____________|___________
+			   |                        |
+                           |                        |
+ Things that uses {   [this.context]            [Consumer]
+ data             		   NestedChild
+			   
+</pre>
+
+Using this.context, we can access only one context variable. So instead if we use Consumer approach then we can access multiple contexts.   
