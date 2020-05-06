@@ -35,6 +35,9 @@ project-root-folder
     ├── utils/helpers // This is a folder full of helper functions that are used globally.
     │   └── index.js
     │
+    ├── contexts
+    │   └── SpecificContext.js [eg, LanguageContext.js]
+    │
     ├── assets
     │   ├── constants
     │   │   ├── index.js           
