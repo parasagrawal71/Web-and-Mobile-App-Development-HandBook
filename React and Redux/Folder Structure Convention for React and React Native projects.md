@@ -1,25 +1,25 @@
-Folder Structure Convention that I want to follow:-(Modify and Improve it with time)   
+Folder/File Structure Convention that I follow(Modify and Improve it with time):-   
 <pre>
 project-root-folder
 └── src
     ├── index.js
     ├── components
     │   └── componentName
-    │       ├── componentName.js
-    │       ├── componentNameStyles.css
-    │       ├── componentNameTest.js
-    │       └── componentNameStyles.scss
+    │       ├── ComponentName.js
+    │       ├── ComponentNameStyles.css
+    │       ├── ComponentNameTest.js
+    │       └── ComponentNameStyles.scss
     │ 
     ├── pages/screens
-    │	├── App
+    │	├── app
     │	│   ├── App.js
     │	│   ├── App.css
     │	│   └── App.test.js
     │   └── pageName
-    │	    ├── pageName.js
-    │	    ├── pageNameStyles.css
-    │       ├── pageNameTest.js
-    │       └── pageNameStyles.scss
+    │	    ├── PageName.js
+    │	    ├── PageNameStyles.css
+    │       ├── PageNameTest.js
+    │       └── PageNameStyles.scss
     │
     ├── services/apis
     │   └── apiProviderName.js
@@ -46,3 +46,7 @@ project-root-folder
 	
  ├──  └──  │
 </pre>
+
+__Some Points to keep in mind:-__
+ * Capitalize component names, page names and App files.   
+ * Function names should start with lowercase letter.   
