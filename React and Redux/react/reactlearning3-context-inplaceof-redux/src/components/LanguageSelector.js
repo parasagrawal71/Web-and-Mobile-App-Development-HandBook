@@ -7,9 +7,12 @@ class LanguageSelector extends React.Component {
         Select a language:
         <i
           className="flag us"
-          onClick={() => this.onLanguageChange("english")}
+          onClick={() => this.props.onLanguageChange("english")}
         />
-        <i className="flag in" onClick={() => this.onLanguageChange("hindi")} />
+        <i
+          className="flag in"
+          onClick={() => this.props.onLanguageChange("hindi")}
+        />
       </div>
     );
   }
