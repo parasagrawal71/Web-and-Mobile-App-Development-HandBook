@@ -24,13 +24,13 @@ project-root-folder
     ├── services/apis
     │   └── apiProviderName.js
     │
-    ├── actions
-    │   ├── index.js
-    │   └── types.js
-    │
-    ├── reducers
-    │   ├── index.js
-    │   └── specificReducerName.js [eg, authReducer.js]
+    ├── redux  
+    │   ├── actions
+    │   │   ├── index.js
+    │	│   └── types.js
+    │   └── reducers
+    │       ├── index.js
+    │       └── specificReducerName.js [eg, authReducer.js]
     │
     ├── utils/helpers // This is a folder full of helper functions that are used globally.
     │   └── index.js
@@ -39,8 +39,19 @@ project-root-folder
     │   ├── constants
     │   │   ├── index.js           
     │   │   └── specificConstantsGroupName.js
-    │   │
-    │   └── images
+    │   ├── fonts 
+    │   ├── jsons
+    │   ├── img // This contains png, jpg, etc file formats except svg.
+    │   ├── svg   
+    │   ├── icons     
+    │   ├── commonStyles
+    │   │   └── index.js
+    │   ├── colors
+    |   │   └── index.js
+    │   ├── queries
+    |   │   └── index.js    
+    │   ├── [anyAssest]
+    |   │   └── index.js  
     │
 
 	
