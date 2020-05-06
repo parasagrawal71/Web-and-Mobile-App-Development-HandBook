@@ -4,7 +4,7 @@ import ColorContext from "../contexts/ColorContext";
 
 class Field extends React.Component {
   renderLabel(value) {
-    return value === "english" ? "Name" : "Naam";
+    return value.language === "english" ? "Name" : "Naam";
   }
 
   render() {
