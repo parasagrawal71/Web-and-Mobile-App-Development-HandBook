@@ -15,5 +15,6 @@
 - Import Assets as package   
 - Save API data into your own variables in frontend   
 - Use Object in place of Array, if possible. Use Indexing i.e., id-value pair where id is used as index.   
+- Custom hooks for React, React Native, etc.
      
    
