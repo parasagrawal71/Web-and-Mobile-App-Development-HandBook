@@ -6,9 +6,7 @@ project-root-folder
     ├── components
     │   └── componentName
     │       ├── ComponentName.js
-    │       ├── ComponentNameStyles.css
-    │       ├── ComponentNameTest.js
-    │       └── ComponentNameStyles.scss
+    │       └── ComponentNameStyles.js
     │ 
     ├── pages/screens
     │	├── app
@@ -17,9 +15,7 @@ project-root-folder
     │	│   └── App.test.js
     │   └── pageName
     │	    ├── PageName.js
-    │	    ├── PageNameStyles.css
-    │       ├── PageNameTest.js
-    │       └── PageNameStyles.scss
+    │	    └── PageNameStyles.js
     │
     ├── services/apis
     │   └── apiProviderName.js
@@ -62,5 +58,5 @@ project-root-folder
 </pre>
 
 __Some Points to keep in mind:-__
- * Capitalize component names, page names and App files.   
+ * Capitalize Component names, Page names and App files.   
  * Function names should start with lowercase letter.   
