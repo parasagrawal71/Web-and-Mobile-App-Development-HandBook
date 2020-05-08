@@ -1,12 +1,17 @@
 {
-    "extends": ["airbnb", "prettier"],
-    "plugins": ["prettier"],
-    "env" : { "browser": true }, // To include global variables (like document, window, etc.)
-    "rules": {
-        // "no-unused-vars": "warn",
-        "prettier/prettier": ["error", {
-            "endOfLine":"auto"
-        }],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }] // To allow .js extensions for JSX.
-    }
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "env": { "browser": true }, // To include global variables (like document, window, etc.)
+  "rules": {
+    // "no-unused-vars": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // To allow .js extensions for JSX.
+    "react/prop-types": 0,
+    "no-console": ["error"]
+  }
 }
