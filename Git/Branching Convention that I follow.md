@@ -29,3 +29,7 @@ __Branching Model that I follow:-__
 		- Must merge back into: develop   
 		- Branch naming convention: bugfix-*   
 		- Must be aggregrated under bugfix/   
+	- Merge branches   
+		- Any two branches to be merged   
+		- Branch naming convention: branch1-and-branch2   
+		- Must be aggregrated under merge/   
