@@ -9,7 +9,7 @@ __METHOD 1 :-__
   "include": ["src"]
 }
 </pre>
-3. Use like this, import Header from "components/header/Header";   
+3. Use like this, import Header from "components/header/Header"; It's WORKING.   
 4. Add following code in your .eslintrc.json file to solve eslint errors:-   
 <pre>
 "settings": {
