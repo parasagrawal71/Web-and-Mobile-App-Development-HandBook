@@ -48,7 +48,8 @@ project-root-folder
     │   ├── svg   
     │   ├── icons     
     │   ├── commonStyles
-    │   │   └── index.js
+    │   │   ├── flex.css
+    │   │   └── index.css
     │   ├── colors
     |   │   └── index.js
     │   ├── queries
