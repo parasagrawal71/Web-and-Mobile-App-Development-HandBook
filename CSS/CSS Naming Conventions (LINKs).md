@@ -1,16 +1,14 @@
 * __CSS Naming Conventions that Will Save You Hours of Debugging__:-   
 https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/   
 
+<pre>
 - Use Hyphen Delimited Strings   
 - The BEM Naming Convention(Block Element Modifier)   
-<pre>
   For example, .stick-man__head--small
 	stick-man = Block
 	head = Element
 	small = modifier
-</pre>
 - CSS Names with JavaScript Hooks   
-<pre>
 For example, 
 <div class="site-navigation js-site-navigation">
 const nav = document.querySelector('.js-site-navigation')
