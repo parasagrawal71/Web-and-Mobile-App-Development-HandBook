@@ -24,7 +24,8 @@ Features:-
 
 
 Good Practices:- 
-- CSS:-
+- CSS
+  - Add flex.css file to commonStlyes folder that contains flex styles to reuse it.
 - 
 
 Documentation:-
