@@ -1,3 +1,4 @@
+__METHOD 1 :-__
 1. Create a file .env in the project root folder where .gitignore, etc files resides.   
 2. Add NODE_PATH=src/ in .env file created.   
 3. Now, use like this,   
