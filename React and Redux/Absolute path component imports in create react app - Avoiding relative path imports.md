@@ -1,4 +1,31 @@
-__METHOD 1 :-__
+__METHOD 1 :-__   
+1. Add jsconfig.json file in project root folder where .gitignore, etc files resides.   
+2. Add following code in jsconfig file:-   
+<pre>
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+</pre>
+3. Use like this, import Header from "components/header/Header";   
+4. Add following code in your .eslintrc.json file to solve eslint errors:-   
+<pre>
+"settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+ },
+</pre>
+Reference Link:- https://medium.com/hackernoon/absolute-imports-with-create-react-app-4c6cfb66c35d (Use Incognito mode if not visible)   
+
+
+
+
+__METHOD 2 :-__   
 1. Create a file .env in the project root folder where .gitignore, etc files resides.   
 2. Add NODE_PATH=src/ in .env file created.   
 3. Now, use like this,   
