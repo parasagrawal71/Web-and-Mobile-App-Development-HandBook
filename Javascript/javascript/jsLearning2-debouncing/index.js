@@ -62,3 +62,10 @@ const debounce = (fn, delay) => {
 };
 
 const callMethodUsingDebounce = debounce(getData, 300); // Name callMethodUsingDebounce as getDataUsingDebounce or getDataOverDebounce
+
+// comparing two timestamp of keyup events and if difference of these two timestamp is more than 300ms then only make an api call.
+const fetchData = (e) => {
+  //   console.log(e);
+  //   if (e.timeStamp) // HOW TO ACCESS TIMESTAMP OF PREVIOUS EVENT
+  console.count("Fetching Data... ");
+};
