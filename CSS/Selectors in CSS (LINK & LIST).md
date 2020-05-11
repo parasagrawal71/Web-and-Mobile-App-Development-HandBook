@@ -73,5 +73,5 @@ Example, ::after, ::before, ::first-letter, ::first-line, ::placeholder, ::selec
 <pre>   
   Selector        Example         Example description
 .class1.class2	.name1.name2	Selects all elements with both name1 and name2 set within its class attribute
-element.class	p.intro	        Selects all <p> elements with class="intro"
+ element.class	 p.intro      Selects all < p> elements with class="intro"
 </pre>
