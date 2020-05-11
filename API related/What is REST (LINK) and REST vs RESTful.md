@@ -3,7 +3,10 @@ https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1
 
 REST vs RESTful:-   
 <pre>
-Representational state transfer (REST) is a style of software architecture. As described in a dissertation by Roy Fielding, REST is an "architectural style" that basically exploits the existing technology and protocols of the Web.
+Representational state transfer (REST) is a style of software architecture. 
+As described in a dissertation by Roy Fielding, REST is an "architectural style" that basically exploits the existing technology and protocols of the Web.
 
 RESTful is typically used to refer to web services implementing such an architecture.
 </pre>
+
+Restful:- where client is stateful and server is stateless
