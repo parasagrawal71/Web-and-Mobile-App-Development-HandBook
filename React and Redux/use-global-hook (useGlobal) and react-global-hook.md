@@ -45,7 +45,7 @@ function App() {
   return (
     < div>
       {globalState.counter}
-      <button onClick={() => globalActions.addToCounter(5)}>Click Me</button>
+      < button onClick={() => globalActions.addToCounter(5)}>Click Me< /button>
     < /div>
   );
 }
