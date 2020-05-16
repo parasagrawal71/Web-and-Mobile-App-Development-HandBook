@@ -33,7 +33,7 @@ project-root-folder
     │       └── specificReducerName.js [eg, authReducer.js]
     │
     ├── utils/helpers // This is a folder full of helper functions that are used globally.
-    │   └── index.js
+    │   └── functions.js
     │
     ├── contexts
     │   └── SpecificContext.js [eg, LanguageContext.js]
@@ -58,7 +58,7 @@ project-root-folder
     |   │   └── index.js  
     │
 
-	
+​	
  ├──  └──  │
 </pre>
 
