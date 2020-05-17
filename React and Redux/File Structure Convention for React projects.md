@@ -22,6 +22,8 @@ project-root-folder
     │       └── PageName.scss
     │
     ├── services/apis
+    │   ├──	handleError.js
+    │   ├── httpConstants.js
     │   └── apiProviderName.js
     │
     ├── redux  
@@ -33,29 +35,34 @@ project-root-folder
     │       └── specificReducerName.js [eg, authReducer.js]
     │
     ├── utils/helpers // This is a folder full of helper functions that are used globally.
-    │   └── functions.js
+    │   ├── constants
+    │   │   ├── index.js           
+    │   │   └── specificConstantsGroupName.js
+    │	├── functions
+    │   │   ├── index.js
+    │   │  	└── specificFunctionsGroupName.js
+    │   ├── commonStyles
+    │   │   ├── index.css
+    │   │   ├── flex.css
+    │   │   └── specificStylesGroupName.css
+    │   ├── colors
+    |   │   └── index.js   
+    │   ├── queries
+    |   │   └── index.js 
+    │   
     │
     ├── contexts
     │   └── SpecificContext.js [eg, LanguageContext.js]
     │
-    ├── assets
-    │   ├── constants
-    │   │   ├── index.js           
-    │   │   └── specificConstantsGroupName.js
+    ├── assets    
     │   ├── fonts 
     │   ├── jsons
-    │   ├── img // This contains png, jpg, etc file formats except svg.
+    │   ├── png 
+    │   ├── jpg // This contains jpg/jpeg file format.
     │   ├── svg   
-    │   ├── icons     
-    │   ├── commonStyles
-    │   │   ├── flex.css
-    │   │   └── index.css
-    │   ├── colors
-    |   │   └── index.js
-    │   ├── queries
-    |   │   └── index.js    
+    │   ├── icons  
     │   ├── [anyAssest]
-    |   │   └── index.js  
+    |   │   
     │
 
 ​	
