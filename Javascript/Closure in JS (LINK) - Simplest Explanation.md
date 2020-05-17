@@ -2,7 +2,9 @@
 
 https://medium.com/@prashantramnyc/javascript-closures-simplified-d0d23fa06ba4
 
+NOTE: The variable `c` no longer exists, although the variable `b` exists as a closure within `inner`.
 
+<br />
 
 MDN Definition:-
 
