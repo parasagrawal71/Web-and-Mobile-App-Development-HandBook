@@ -37,9 +37,9 @@ arr.filter((value, index, array) => {
 * __reduce__  Return value: The single value that results from the reduction.   
 The reduce() method works from left-to-right in the array.   
 <pre>
-arr.reduce((accumulator, value, index, array) => {
-  console.log(accumulator, value, index, array);
-  return accumulator + value;
+arr.reduce((accumulator, currValue, index, array) => {
+  console.log(accumulator, currValue, index, array);
+  return accumulator + currValue;
 }, 100); // 100 is initialValue to accumulator
 </pre>
 
