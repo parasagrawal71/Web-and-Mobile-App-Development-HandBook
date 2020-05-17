@@ -4,3 +4,8 @@
   background-color: #282c34;
   margin-top: 20px;
 }
+
+.text {
+  font-size: 25px;
+  color: var(--textColor);
+}

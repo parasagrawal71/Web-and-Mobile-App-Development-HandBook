@@ -15,6 +15,9 @@ function App() {
       <div className="App-content" style={{ color: assumeItProp }}>
         CONTENT
       </div>
+      <div className="text" style={{ "--textColor": assumeItProp }}>
+        2nd CONTENT
+      </div>
     </div>
   );
 }
