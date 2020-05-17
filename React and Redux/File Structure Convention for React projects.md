@@ -3,6 +3,7 @@ Folder/File Structure Convention that I follow(Modify and Improve it with time):
 project-root-folder
 └── src
     ├── index.js
+    ├── index.css // This contains all font supports(@font-faces)
     ├── components
     │   └── componentName
     │       ├── ComponentName.js
