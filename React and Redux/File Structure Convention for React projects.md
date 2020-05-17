@@ -10,7 +10,7 @@ project-root-folder
     │       ├── ComponentName.test.js
     │       └── ComponentName.scss
     │ 
-    ├── pages/screens
+    ├── pages
     │	├── app
     │	│   ├── App.js
     │	│   ├── App.css
@@ -22,7 +22,7 @@ project-root-folder
     │       └── PageName.scss
     │
     ├── services/apis
-    │   ├──	handleError.js
+    │   ├── handleError.js
     │   ├── httpConstants.js
     │   └── apiProviderName.js
     │
@@ -34,7 +34,7 @@ project-root-folder
     │       ├── index.js
     │       └── specificReducerName.js [eg, authReducer.js]
     │
-    ├── utils/helpers // This is a folder full of helper functions that are used globally.
+    ├── utils // This is a folder full of helper functions that are used globally.
     │   ├── constants
     │   │   ├── index.js           
     │   │   └── specificConstantsGroupName.js
@@ -64,6 +64,7 @@ project-root-folder
     │   ├── [anyAssest]
     |   │   
     │
+
 
 ​	
  ├──  └──  │
