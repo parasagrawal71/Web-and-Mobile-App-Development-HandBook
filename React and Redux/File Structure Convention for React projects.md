@@ -40,7 +40,7 @@ project-root-folder
     │   │   └── specificConstantsGroupName.js
     │	├── functions
     │   │   ├── index.js
-    │   │  	└── specificFunctionsGroupName.js
+    │   │   └── ispecificFunctionsGroupName.js
     │   ├── commonStyles
     │   │   ├── index.css
     │   │   ├── flex.css
