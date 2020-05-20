@@ -40,8 +40,6 @@ Example,
 	</div>
 </div>
 
-
-
 On clicking child,
 grandparent clicked
 parent clicked
@@ -67,15 +65,19 @@ According to W3C, First event trickles down then bubbles up
 
 (If useCapture is true for html element, its eventHandler is executed. In case useCapture is false, eventHandler will be executed while bubbling up stage)
 
-Event capturing(1st)		Event Bubbling(Then)
+```
+Event capturing(1st)				Event Bubbling(Then)
 
-​			\								/
+			\								/
 
-​				\						/
+				\						/
 
-​					\				/
+					\				/
 
-​						\		/
+						\		/
+
+
+```
 
 
 
