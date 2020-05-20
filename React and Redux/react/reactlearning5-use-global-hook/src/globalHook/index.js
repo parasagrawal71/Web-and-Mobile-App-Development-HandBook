@@ -6,6 +6,7 @@ import actions from "./actions";
 
 const initialState = {
   counter: 0,
+  another: false,
 };
 
 const useGlobal = globalHook(React, initialState, actions);

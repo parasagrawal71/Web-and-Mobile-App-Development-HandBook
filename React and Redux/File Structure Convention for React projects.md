@@ -31,9 +31,12 @@ project-root-folder
     │   ├── actions
     │   │   ├── index.js
     │	│   └── types.js
-    │   └── reducers
-    │       ├── index.js
-    │       └── specificReducerName.js [eg, authReducer.js]
+    │   ├── reducers
+    │   │   ├── index.js
+    │   │   └── specificReducerName.js [eg, authReducer.js]
+    │	└── globalHook
+    │		├── index.js
+    │		└── actions.js
     │
     ├── utils // This is a folder full of helper functions that are used globally.
     │   ├── constants
