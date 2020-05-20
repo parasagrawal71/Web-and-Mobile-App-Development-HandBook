@@ -11,6 +11,13 @@ project-root-folder
     │       ├── ComponentName.test.js
     │       └── ComponentName.scss
     │ 
+    ├── subComponents // These components are independent that doesn't import any components
+    │   └── componentName
+    │       ├── ComponentName.js
+    │       ├── ComponentName.css
+    │       ├── ComponentName.test.js
+    │       └── ComponentName.scss
+    │
     ├── pages
     │	├── app
     │	│   ├── App.js
@@ -38,33 +45,34 @@ project-root-folder
     │		├── index.js
     │		└── actions.js
     │
+    ├── contexts
+    │   └── SpecificContext.js [eg, LanguageContext.js]
+    │
+    │
     ├── utils // This is a folder full of helper functions that are used globally.
+    │   ├── colors
+    |   │   └── index.js
+    │   ├── commonStyles
+    │   │   ├── index.css
+    │   │   ├── flex.css
+    │   │   └── specificStylesGroupName.css
     │   ├── constants
     │   │   ├── index.js           
     │   │   └── specificConstantsGroupName.js
     │	├── functions
     │   │   ├── index.js
-    │   │   └── specificFunctionsGroupName.js
-    │   ├── commonStyles
-    │   │   ├── index.css
-    │   │   ├── flex.css
-    │   │   └── specificStylesGroupName.css
-    │   ├── colors
-    |   │   └── index.js   
+    │   │   └── specificFunctionsGroupName.js   
     │   ├── queries
     |   │   └── index.js 
-    │   
     │
-    ├── contexts
-    │   └── SpecificContext.js [eg, LanguageContext.js]
     │
     ├── assets    
-    │   ├── fonts 
+    │   ├── fonts   
+    │   ├── icons 
+    │   ├── jpg // This contains jpg/jpeg file format. 
     │   ├── jsons
-    │   ├── png 
-    │   ├── jpg // This contains jpg/jpeg file format.
-    │   ├── svg   
-    │   ├── icons  
+    │   ├── png
+    │   ├── svg  
     │   ├── [anyAssest]
     |   │   
     │
