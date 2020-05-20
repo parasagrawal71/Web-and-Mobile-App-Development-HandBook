@@ -1,1 +1,0 @@
-* To appear "open cmd here" in a folder - Hold shift and right click in that folder.	
