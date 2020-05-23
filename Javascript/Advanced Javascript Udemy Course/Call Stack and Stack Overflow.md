@@ -1,5 +1,7 @@
 ##### Call Stack:-
 
+First one to be pushed in call stack is *<u>Global Execution Context  (anonymous)</u>*
+
 ```js
 function addNums(x,y){
 	console.log(subTwo(x + y));
