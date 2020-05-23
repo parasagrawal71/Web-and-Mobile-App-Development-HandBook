@@ -1,4 +1,4 @@
-##### Call Stack:-
+#### Call Stack:-
 
 First one to be pushed in call stack is *<u>Global Execution Context  (anonymous)</u>*
 
@@ -15,7 +15,7 @@ debugger;
 addNums(2,10)
 ```
 
-##### Stack Overflow:-
+#### Stack Overflow:-
 
 ```javascript
 function recursion() {

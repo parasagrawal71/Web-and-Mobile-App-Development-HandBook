@@ -1,4 +1,4 @@
-- ##### Interpreter vs Compiler 
+- #### Interpreter vs Compiler 
 
   (JS engine uses both)
 

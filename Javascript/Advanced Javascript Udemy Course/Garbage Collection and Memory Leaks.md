@@ -1,11 +1,19 @@
-##### Garbage Collection:-
+#### Garbage Collection:-
 
 - JS uses **Mark and Sweep** algorithm for garbage collection.
 - 
 
 
 
-##### Memory Leaks:-
+###### NOTE:  
+
+SoundCloud Example: Garbage Collection in Redux Applications (Interesting Read)
+
+https://developers.soundcloud.com/blog/garbage-collection-in-redux-applications
+
+
+
+#### Memory Leaks:-
 
 ```javascript
 let arr = [];
