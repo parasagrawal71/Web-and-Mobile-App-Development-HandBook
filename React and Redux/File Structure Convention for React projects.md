@@ -11,7 +11,7 @@ project-root-folder
     │       ├── ComponentName.test.js
     │       └── ComponentName.scss
     │ 
-    ├── subComponents // These components are independent that doesn't import any components
+    ├── subComponents // These components are such components that very genric such as button, popup(it imports button), toast, searchBox, etc.
     │   └── componentName
     │       ├── ComponentName.js
     │       ├── ComponentName.css
@@ -32,7 +32,7 @@ project-root-folder
     ├── services/apis
     │   ├── handleError.js
     │   ├── httpConstants.js
-    │   └── apiProviderName.js
+    │   └── apiProviderName.js or specificName.js [eg, usersApi.js]
     │
     ├── redux  
     │   ├── actions

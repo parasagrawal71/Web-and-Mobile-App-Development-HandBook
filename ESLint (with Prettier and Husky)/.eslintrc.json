@@ -1,7 +1,14 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react", "react-hooks"],
   "env": { "browser": true }, // To include global variables (like document, window, etc.)
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
   "rules": {
     // "no-unused-vars": "warn",
     "prettier/prettier": [
@@ -12,6 +19,7 @@
     ],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // To allow .js extensions for JSX.
     "react/prop-types": 0,
-    "no-console": ["error"]
+    "no-console": ["error"],
+    "react-hooks/exhaustive-deps": "error"
   }
 }
