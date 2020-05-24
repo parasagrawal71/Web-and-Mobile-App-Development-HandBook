@@ -48,10 +48,15 @@ project-root-folder
     ├── contexts
     │   └── SpecificContext.js [eg, LanguageContext.js]
     │
+    ├── routes
+    │   ├── history.js
+    │   ├── Routes.js
+    │   └── RouteWrapper.js
+    │
     │
     ├── utils // This is a folder full of helper functions that are used globally.
     │   ├── colors
-    |   │   └── index.js
+    |   │   └── index.scss
     │   ├── commonStyles
     │   │   ├── index.css
     │   │   ├── flex.css
