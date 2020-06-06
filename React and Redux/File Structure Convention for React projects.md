@@ -6,6 +6,11 @@ project-root-folder
     ├── index.css // This contains all font supports(@font-faces)
     ├── components
     │   └── componentName
+    │		├── components
+    │		│	├── ComponentName.js
+    │		│	├── ComponentName.css
+    │		│	├── ComponentName.test.js
+    │		│	└── ComponentName.scss
     │       ├── ComponentName.js
     │       ├── ComponentName.css
     │       ├── ComponentName.test.js
@@ -23,11 +28,11 @@ project-root-folder
     │	│   ├── App.js
     │	│   ├── App.css
     │	│   └── App.test.js
-    │   └── pageName
-    │	    ├── PageName.js
-    │	    ├── PageName.css
-    │       ├── PageName.test.js
-    │       └── PageName.scss
+    │   └── [pageName]Page
+    │	    ├── [PageName]Page.js
+    │	    ├── [PageName]Page.css
+    │       ├── [PageName]Page.test.js
+    │       └── [PageName]Page.scss
     │
     ├── services/apis
     │   ├── handleError.js
