@@ -1,1 +1,5 @@
 /src/App1.js
+
+/.firebase
+/build
+/node_modules
