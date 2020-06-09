@@ -60,14 +60,12 @@ project-root-folder
     │
     │
     ├── utils // This is a folder full of helper functions that are used globally.
-    │   ├── colors
-    |   │   └── index.scss
     │   ├── commonStyles
-    │   │   ├── index.css
-    │   │   ├── flex.css
+    │   │   ├── colors.scss
+    │   │   ├── flex.scss (Use mixins inside)
     │   │   └── specificStylesGroupName.css
     │   ├── constants
-    │   │   ├── index.js           
+    │   │   ├── clientUrl.js           
     │   │   └── specificConstantsGroupName.js
     │	├── functions
     │   │   ├── index.js
