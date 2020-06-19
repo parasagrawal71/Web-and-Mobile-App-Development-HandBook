@@ -65,7 +65,7 @@ project-root-folder
     │   │   ├── flex.scss (Use mixins inside)
     │   │   └── specificStylesGroupName.css
     │   ├── constants
-    │   │   ├── clientUrl.js           
+    │   │   ├── index.js          
     │   │   └── specificConstantsGroupName.js
     │	├── functions
     │   │   ├── index.js
@@ -82,7 +82,7 @@ project-root-folder
     │   ├── png
     │   ├── svg  
     │   ├── [anyAssest]
-    |   │   
+    |   ├── Images.js   
     │
 
 
