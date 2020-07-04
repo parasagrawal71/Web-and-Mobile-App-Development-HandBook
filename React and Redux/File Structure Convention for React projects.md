@@ -56,7 +56,8 @@ project-root-folder
     ├── routes
     │   ├── history.js
     │   ├── Routes.js
-    │   └── RouteWrapper.js
+    │   ├── RouteWrapper.js
+    │   └── ScrollToTop.js
     │
     │
     ├── utils // This is a folder full of helper functions that are used globally.
