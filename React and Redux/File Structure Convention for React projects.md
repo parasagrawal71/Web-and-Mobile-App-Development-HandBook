@@ -41,7 +41,7 @@ project-root-folder
     │
     ├── redux  
     │   ├── actions
-    │   │   ├── index.js
+    │   │   ├── index.js or [someName]Actions.js
     │	│   └── types.js
     │   ├── reducers
     │   │   ├── index.js
