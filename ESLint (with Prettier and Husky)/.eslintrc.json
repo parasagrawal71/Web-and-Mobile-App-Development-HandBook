@@ -22,6 +22,7 @@
     "no-console": ["error"],
     "react-hooks/exhaustive-deps": "error",
     "no-use-before-define": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }

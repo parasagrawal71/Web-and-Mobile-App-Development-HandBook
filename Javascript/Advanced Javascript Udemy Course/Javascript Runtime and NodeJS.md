@@ -39,7 +39,7 @@ console.log('3')
 
 NOTE:
 
-NodeJS is Javascript Runtime not a Javascript engine, written in C++ language also in javascript for V8 engine and it is like executable file(.exe file) which provides runtime support for javascript.
+**NodeJS is Javascript Runtime** not a Javascript engine, written in C++ language also in javascript for V8 engine and it is like executable file(.exe file) which provides runtime support for javascript.
 
 
 
@@ -54,3 +54,27 @@ console.log('3');
 // 1
 ```
 
+
+
+```javascript
+console.log('1');
+setTimeout(() => {console.log('2')}, 0);
+setTimeout(() => {console.log('3')}, 3000);
+setTimeout(() => {console.log('4')}, 1000);
+setTimeout(() => {console.log('5')}, 0);
+console.log('6');
+
+
+// OUTPUT:-
+// 1
+// 6
+// 2
+// 5
+// 4
+// 3
+
+```
+
+
+
+- Similar to 'window' in browser, we have 'global' in nodejs.

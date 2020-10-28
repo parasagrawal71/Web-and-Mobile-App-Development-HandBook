@@ -1,5 +1,7 @@
-- **Single threaded** (One call stack and one memory heap)
-
+- **Single threaded**
+  - Since it has one call stack, it runs code one at a time.
+  - It uses callback queue
+- **Interpreted** language
+  - Yes it was interpreted initially but it depends on implementation of JS Engine.
 - **Synchronous**
-
-  (To have threads in background or asynchronous behaviour, Javascript runtime provides Web API having functions like fetch(), setTimeout(), setInterval(), etc )
+  - To have threads in background or asynchronous behaviour, Javascript runtime provides Web API having functions like fetch(), setTimeout(), setInterval(), etc

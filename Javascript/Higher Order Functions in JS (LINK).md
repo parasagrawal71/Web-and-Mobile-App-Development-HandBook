@@ -2,7 +2,7 @@
 
 https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99
 
-<br />
+
 
 Definition:-
 

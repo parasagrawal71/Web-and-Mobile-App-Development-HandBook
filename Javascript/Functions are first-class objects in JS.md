@@ -6,7 +6,7 @@
 - Be stored in some data structure; and,
 - Hold their own properties and methods.
 
-<br />
+
 
 #### An Introduction to First-Class Functions:-
 

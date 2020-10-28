@@ -33,5 +33,5 @@ Three reasons for memory leaks:-
 
 1. Too many <u>*Global Variables*</u> by using 'var' keyword
 2. Too many <u>*Event Listeners*</u> (we forget to remove them, like in SPA when we move back and forth repeatedly and we don't remove them)
-3. Using *<u>setInterval</u>* (In case of we don't clear Interval, and if it references the objects it does this repeatedly after specified interval that garbage collector unable to clear this)
+3. Using *<u>setInterval</u>* (In case of we don't clear Interval, and if it references the objects inside it, it does this repeatedly after specified interval that garbage collector unable to clear this)
 

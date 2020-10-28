@@ -1,5 +1,7 @@
 'var' and 'function' keywords are hoisted whereas 'const' and 'let' are not.
 
+('var' is partially hoisted which means it's declared but assigned undefined value initially)
+
 ```javascript
 console.log(num);
 console.log(sing());
