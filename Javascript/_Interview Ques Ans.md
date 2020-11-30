@@ -34,7 +34,7 @@ Promise.resolve schedules a microtask and the setTimeout schedules a macrotask. 
 #### Q. Following examples runs slow in chrome browser but faster in NodeJS env instead of having same v8 engine. why is that?
 
 ```javascript
-for(var i=0;i<10000000000;i++){
+for(var i=0;i<1000000000000;i++){
     console.log(i);
 }
 ```
@@ -42,4 +42,8 @@ for(var i=0;i<10000000000;i++){
 => Because in chrome browser, scope is window but in NodeJS it is global
 
 
+
+#### Q. Implement custom event emitter
+
+=> Check "javascript/jsLearning5-event-emitter" for the solution.
 
