@@ -1,25 +1,35 @@
 __METHOD 1 :-__   
 1. Add jsconfig.json file in project root folder where .gitignore, etc files resides.   
+
 2. Add following code in jsconfig file:-   
-<pre>
-{
-  "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src"]
-}
-</pre>
+
+   ```json
+   {
+     "compilerOptions": {
+       "baseUrl": "src"
+     },
+     "include": ["src"]
+   }
+   ```
+
+   
+
 3. Use like this, import Header from "components/header/Header"; It's WORKING.   
+
 4. Add following code in your .eslintrc.json file to solve eslint errors:-   
-<pre>
-"settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
-      }
+
+   ```json
+   "settings": {
+       "import/resolver": {
+         "node": {
+           "paths": ["src"]
+         }
+       }
     }
- },
-</pre>
+   ```
+
+   
+
 Reference Link:- https://medium.com/hackernoon/absolute-imports-with-create-react-app-4c6cfb66c35d (Use Incognito mode if not visible)   
 
 
@@ -41,12 +51,13 @@ Also sometimes, components/Button` import should occur before import of `../../c
 
 
 Add following code in your .eslintrc.json file to solve eslint errors:-   
-<pre>
+```json
 "settings": {
     "import/resolver": {
       "node": {
         "paths": ["src"]
       }
     }
- },
-</pre>
+ }
+```
+

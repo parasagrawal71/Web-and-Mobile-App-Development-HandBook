@@ -1,4 +1,4 @@
-<pre>
+```javascript
 function expensive() {
   console.log("expensive function called");
 }
@@ -23,8 +23,10 @@ function throttle(fn, limit) {
 }
 
 window.addEventListener("resize", betterExpensive);
+```
 
-</pre>
 
-Akshay Saini's Video:-   
+
+Akshay Saini's Video:-
+
 https://www.youtube.com/watch?v=81NGEXAaa3Y&list=PLlasXeu85E9eV5xUEgrWUB8NAUvNZGsK0&index=2

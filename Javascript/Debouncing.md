@@ -1,4 +1,4 @@
-<pre>
+```javascript
 const getData = (arg) => {
   console.count("Fetching Data... " + arg);
 };
@@ -16,7 +16,10 @@ const debounce = (fn, delay) => {
 };
 
 const callMethodUsingDebounce = debounce(getData, 300); // Name callMethodUsingDebounce as getDataUsingDebounce or getDataOverDebounce
-</pre>
+```
 
-Akshay Saini's Video:-   
+
+
+Akshay Saini's Video:-  
+
 https://www.youtube.com/watch?list=PLlasXeu85E9eV5xUEgrWUB8NAUvNZGsK0&v=Zo-6_qx8uxg&index=1&app=desktop

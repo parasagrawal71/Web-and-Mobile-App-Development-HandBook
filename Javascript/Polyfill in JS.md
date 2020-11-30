@@ -1,7 +1,8 @@
-Q) What is Polyfill?   
-A) A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it. ... The polyfill uses non-standard features in a certain browser to give JavaScript a standards-compliant way to access the feature.   
+###### Q) What is Polyfill?
 
-<pre>
+=> A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it. ... The polyfill uses non-standard features in a certain browser to give JavaScript a standards-compliant way to access the feature.
+
+```javascript
 let name = {
   first: "Paras",
   last: "Agrawal",
@@ -23,5 +24,7 @@ Function.prototype.mybind = function (...args) {
 
 let printMyFullName2 = printFullName.mybind(name, "Blr");
 printMyFullName2("Karnataka");
+```
 
-</pre>
+
+

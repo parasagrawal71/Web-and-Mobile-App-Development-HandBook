@@ -3,7 +3,8 @@ https://www.npmjs.com/package/use-global-hook
 Code written and tested in react/reactlearning5-use-global-hook   
 
 globalHook/index.js
-<pre>
+
+```react
 import React from "react";
 import globalHook from "use-global-hook";
 
@@ -17,11 +18,13 @@ const initialState = {
 const useGlobal = globalHook(React, initialState, actions);
 
 export default useGlobal;
-</pre>
+```
+
 
 
 globalHook/actions.js
-<pre>
+
+```react
 const actions = {
   addToCounter: (store, value) => {
     store.setState({ counter: store.state.counter + value });
@@ -29,12 +32,13 @@ const actions = {
 };
 
 export default actions;
+```
 
-</pre>
 
 
 Component where we are using
-<pre>
+
+```javascript
 import React from "react";
 
 import useGlobal from "./globalHook";
@@ -51,7 +55,11 @@ function App() {
 }
 
 export default App;
-</pre>
+```
+
+
+
+
 
 # react-global-hook   
 https://medium.com/@hosseinm.developer/manage-state-with-react-hooks-how-to-use-react-global-hook-785331e5f1f

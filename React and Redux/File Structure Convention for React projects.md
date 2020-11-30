@@ -1,5 +1,5 @@
 Folder/File Structure Convention that I follow(Modify and Improve it with time):-   
-<pre>
+```
 project-root-folder
 └── src
     ├── index.js
@@ -87,10 +87,14 @@ project-root-folder
     │
 
 
+
 ​	
  ├──  └──  │
-</pre>
+```
+
+
 
 __Some Points to keep in mind:-__
+
  * Capitalize Component names, Page names and App files.   
  * Function names should start with lowercase letter.   

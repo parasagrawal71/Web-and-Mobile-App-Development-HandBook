@@ -42,17 +42,8 @@ const multiply = (x) => {
    
     };
    
-};
+   };
    
-const multiplyByTwo = multiply(2);
-   
-multiplyByTwo(10);
+   const multiplyByTwo = multiply(2);
+   multiplyByTwo(10);
    ```
-
-   
-
-   
-
-   
-   
-   

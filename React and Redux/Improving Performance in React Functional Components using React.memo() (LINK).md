@@ -6,4 +6,4 @@ How to stop re-render in React:-
 	- shouldComponentUpdate(…) {…} life-cycle hook   
 
 * In Functional Components:-   
-	- React.memo()   
+	- React.memo() 

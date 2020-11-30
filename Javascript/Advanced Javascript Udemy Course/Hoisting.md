@@ -26,9 +26,5 @@ console.log(sing2) // undefined
 var sing2 = function() {
     console.log('singing second time.....')
 }
-
-
-
-
 ```
 
