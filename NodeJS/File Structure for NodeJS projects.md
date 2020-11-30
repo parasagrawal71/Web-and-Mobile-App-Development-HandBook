@@ -1,4 +1,4 @@
-<pre>
+```
 project-root-folder
 ├── server.js
 └── src    
@@ -15,7 +15,8 @@ project-root-folder
     ├── utils
     │   └── db.connect.js
     │
-</pre>
+```
+
 
 
 
