@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice CSS</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container1 {
+        padding: 5px 0;
+        border: 2px solid red;
+
+        /* WORKING */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+      }
+      .container1_span1 {
+        padding: 5px 0;
+        border: 2px solid blue;
+
+        /* NOT WORKING */
+        /* float: left; */
+        /* NOT WORKING */
+        /* float: right; */
+        /* NOT WORKING */
+        /* text-align: left; */
+      }
+      .container1_span2 {
+        padding: 5px 0;
+        border: 2px solid blue;
+
+        /* WORKING */
+        /* float: right; */
+        /* NOT WORKING */
+        /* text-align: right; */
+        /* NOT WORKING */
+        width: 50px;
+      }
+
+      .container2 {
+        padding: 5px 0;
+        border: 2px solid red;
+        margin-top: 50px;
+      }
+      .container2_div1 {
+        padding: 5px 0;
+        border: 2px solid blue;
+      }
+      .container2_div2 {
+        padding: 5px 0;
+        border: 2px solid blue;
+
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <span class="container1_span1">SPAN1</span>
+      <span class="container1_span2">SPAN2</span>
+    </div>
+
+    <div class="container2">
+      <div class="container2_div1">DIV1</div>
+      <div class="container2_div2">DIV2</div>
+    </div>
+  </body>
+</html>
+
+<!-- ****************************** BASIC HTML CODE ****************************** -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice CSS</title>
+    <style></style>
+  </head>
+  <body></body>
+</html> -->
