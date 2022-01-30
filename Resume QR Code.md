@@ -1,0 +1,3 @@
+- add qr code in resume to open the urls, video, etc in phone
+- maybe send mail so that it can be opened in website as well?
+- qr code on website projects to open website in phone and check responsiveness
