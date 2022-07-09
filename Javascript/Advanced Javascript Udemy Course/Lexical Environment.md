@@ -1,2 +1,0 @@
-- Simply means where we write code (not from where we call it)
-- Global is the first lexical environment then functions have their own lexical environment.
