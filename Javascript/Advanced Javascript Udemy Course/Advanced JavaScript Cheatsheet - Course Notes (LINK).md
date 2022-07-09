@@ -1,1 +1,0 @@
-https://zerotomastery.io/courses/advanced-javascript/cheatsheet/
