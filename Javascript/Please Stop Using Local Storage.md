@@ -1,1 +1,0 @@
-https://dev.to/rdegges/please-stop-using-local-storage-1i04
